@@ -27,7 +27,7 @@ body {
   font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  padding: 0 1.5rem 3rem;
+  padding: 0 1rem 3rem;
 }
 
 .page {
@@ -231,14 +231,11 @@ body {
 
 .relic-block {
   position: relative;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--bg);
-  padding: 0.7rem;
+  padding-top: 0.6rem;
 }
 
 .relic-block + .relic-block {
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
 }
 
 .relic-block-label {
