@@ -41,10 +41,34 @@ body {
   font-size: 1.6rem;
 }
 
-.subtitle {
-  margin: 0;
+.header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.7rem;
+  padding-top: 0.3rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  border: 1px solid var(--border);
+}
+
+.social-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .filters {
