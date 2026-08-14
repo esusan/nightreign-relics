@@ -329,3 +329,12 @@ body {
     flex-direction: column;
   }
 }
+
+@media (min-width: 641px) {
+  .filters {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+  }
+}
