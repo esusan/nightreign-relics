@@ -140,8 +140,7 @@
       "hpLv15": 1621,
       "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。ランダムはハルモニアケア。",
       "bossIds": [
-        "gnoster",
-        "unknown"
+        "gnoster"
       ],
       "createdAt": "2026-08-07"
     },
@@ -244,6 +243,20 @@
       "createdAt": "2026-07-04"
     },
     {
+      "id": "guardian-unknown",
+      "characterId": "guardian",
+      "relicImages": [
+        "assets/relics/guardian-gnoster-unknown_1.png",
+        "assets/relics/guardian-gnoster-unknown_2.png"
+      ],
+      "hpLv15": 1621,
+      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。ランダムはハルモニアケア。",
+      "bossIds": [
+        "unknown"
+      ],
+      "createdAt": "2026-08-07"
+    },
+    {
       "id": "ironeye-all",
       "characterId": "ironeye",
       "relicImages": [
@@ -324,7 +337,7 @@
         "assets/relics/recluse-caligo_1.png",
         "assets/relics/recluse-caligo_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1476,
       "concept": "何も考えることがない。",
       "createdAt": "2026-08-15"
     }
