@@ -241,7 +241,7 @@
         "assets/relics/recluse-all_2.png"
       ],
       "hpLv15": 1342,
-      "concept": "大剣バッタが強すぎる、武器ローグライクしにくい",
+      "concept": "大剣二刀バッタが強すぎる、武器ローグライクしにくい",
       "bossIds": [
         "adel",
         "gnoster",
@@ -260,7 +260,7 @@
         "assets/relics/ironeye-all_2.png"
       ],
       "hpLv15": 1379,
-      "concept": "ムキムキ、武器ローグライクやりたい",
+      "concept": "ムキムキの目、武器ローグライクやりたい",
       "bossIds": [
         "gladius",
         "adel",
@@ -294,7 +294,7 @@
         "assets/relics/hermit-libra_2.png"
       ],
       "hpLv15": "968(1452)",
-      "concept": "リブラに守護者プライドバトルに負けたら出す",
+      "concept": "リブラの守護者プライドバトルに負けたら出す",
       "bossIds": [
         "libra"
       ]
