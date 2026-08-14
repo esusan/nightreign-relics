@@ -138,25 +138,45 @@ async function main() {
       card.appendChild(bossRow);
     }
 
-    const relicRow = document.createElement("div");
-    relicRow.className = "relic-images";
-    const images = entry.relicImages ?? [];
-    for (let i = 0; i < 2; i++) {
-      const src = images[i];
-      if (src) {
-        const img = document.createElement("img");
-        img.className = "relic-image";
-        img.src = src;
-        img.alt = `${bossNames.join("・")}の遺物${i + 1}`;
-        relicRow.appendChild(img);
-      } else {
-        const ph = document.createElement("div");
-        ph.className = "relic-image-placeholder";
-        ph.textContent = "未登録";
-        relicRow.appendChild(ph);
+    function buildRelicRow(images, altPrefix) {
+      const row = document.createElement("div");
+      row.className = "relic-images";
+      for (let i = 0; i < 2; i++) {
+        const src = images[i];
+        if (src) {
+          const img = document.createElement("img");
+          img.className = "relic-image";
+          img.src = src;
+          img.alt = `${altPrefix}の遺物${i + 1}`;
+          row.appendChild(img);
+        } else {
+          const ph = document.createElement("div");
+          ph.className = "relic-image-placeholder";
+          ph.textContent = "未登録";
+          row.appendChild(ph);
+        }
       }
+      return row;
     }
-    card.appendChild(relicRow);
+
+    const bossLabel = bossNames.join("・");
+
+    if (entry.variantGroups) {
+      for (const group of entry.variantGroups) {
+        const groupWrap = document.createElement("div");
+        groupWrap.className = "variant-group";
+
+        const label = document.createElement("span");
+        label.className = "variant-group-label";
+        label.textContent = group.label;
+        groupWrap.appendChild(label);
+
+        groupWrap.appendChild(buildRelicRow(group.images ?? [], `${bossLabel}(${group.label})`));
+        card.appendChild(groupWrap);
+      }
+    } else {
+      card.appendChild(buildRelicRow(entry.relicImages ?? [], bossLabel));
+    }
 
     const hpRow = document.createElement("div");
     hpRow.className = "hp-row";

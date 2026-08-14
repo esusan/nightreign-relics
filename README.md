@@ -28,6 +28,24 @@
 
 同じ遺物構成を複数ボスで使い回す場合、コンセプト文もまとめて共有できるなら `bossIds` に複数指定して1エントリにする。ボスごとにコンセプト文が異なる場合は、エントリはボスごとに分けたまま `relicImages` にだけ同じファイルパスを指定する（画像だけ使い回す）。
 
+同じボスに対して複数の遺物構成パターン（耐久型・鎌型など）を1枚のカードで見せたい場合は、`relicImages` の代わりに `variantGroups` を使う。
+
+```json
+{
+  "id": "guardian-gladius",
+  "characterId": "guardian",
+  "bossIds": ["gladius"],
+  "hpLv15": 1742,
+  "concept": "コンセプト文言",
+  "variantGroups": [
+    { "label": "耐久特化", "images": ["assets/relics/guardian-gladius-taikyu_1.png", "assets/relics/guardian-gladius-taikyu_2.png"] },
+    { "label": "鎌見つけやすく", "images": ["assets/relics/guardian-gladius-kama_1.png", "assets/relics/guardian-gladius-kama_2.png"] }
+  ]
+}
+```
+
+各グループの `label` が画像の上に見出しとして表示される。HP・コンセプトはエントリ共通で1回だけ表示される。
+
 ## 遺物画像のトリミング
 
 `遺物儀式`画面でスロットを選択した状態（左側に詳細パネルが出た状態）でスクリーンショットを撮る。スロットを切り替えて2枚撮ると、遺物画像2枚分になる。

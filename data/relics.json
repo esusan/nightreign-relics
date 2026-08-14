@@ -91,31 +91,28 @@
   ],
   "entries": [
     {
-      "id": "guardian-gladius-taikyu",
+      "id": "guardian-gladius",
       "characterId": "guardian",
-      "variant": "耐久特化",
-      "relicImages": [
-        "assets/relics/guardian-gladius-taikyu_1.png",
-        "assets/relics/guardian-gladius-taikyu_2.png"
+      "bossIds": [
+        "gladius"
       ],
       "hpLv15": 1742,
       "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
-      "bossIds": [
-        "gladius"
-      ]
-    },
-    {
-      "id": "guardian-gladius-kama",
-      "characterId": "guardian",
-      "variant": "鎌見つけやすく",
-      "relicImages": [
-        "assets/relics/guardian-gladius-kama_1.png",
-        "assets/relics/guardian-gladius-kama_2.png"
-      ],
-      "hpLv15": 1742,
-      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
-      "bossIds": [
-        "gladius"
+      "variantGroups": [
+        {
+          "label": "耐久特化",
+          "images": [
+            "assets/relics/guardian-gladius-taikyu_1.png",
+            "assets/relics/guardian-gladius-taikyu_2.png"
+          ]
+        },
+        {
+          "label": "鎌見つけやすく",
+          "images": [
+            "assets/relics/guardian-gladius-kama_1.png",
+            "assets/relics/guardian-gladius-kama_2.png"
+          ]
+        }
       ]
     },
     {
