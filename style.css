@@ -319,3 +319,9 @@ body {
   color: var(--text-muted);
   margin-top: 3rem;
 }
+
+@media (max-width: 640px) {
+  .relic-images {
+    flex-direction: column;
+  }
+}

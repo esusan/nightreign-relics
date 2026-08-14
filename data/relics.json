@@ -97,7 +97,7 @@
         "gladius"
       ],
       "hpLv15": 1742,
-      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする、サイス振りそうなキャラピックだったら鎌見つけやすくを採用する",
+      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする。サイス振りそうなキャラピックだったら鎌見つけやすくを採用する。",
       "variantGroups": [
         {
           "label": "耐久特化",
@@ -123,7 +123,7 @@
         "assets/relics/guardian-adel_2.png"
       ],
       "hpLv15": 1540,
-      "concept": "竜巻スタジアムをアーツキャンセルする、大弓でタゲ取って掴みからアーツ回収、刺剣で状態異常を狙う、エンチャ後は左手にメイン武器・右手に回避戦技",
+      "concept": "竜巻スタジアムをアーツキャンセルする。大弓でタゲ取って掴みからアーツ回収。刺剣で状態異常を狙う。エンチャ後は左手にメイン武器・右手に回避戦技。",
       "bossIds": [
         "adel"
       ]
@@ -136,7 +136,7 @@
         "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
-      "concept": "基本は大弓でグノ担当、明らかにグノ担当がいる場合はガーカン付帯を積む",
+      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。",
       "bossIds": [
         "gnoster",
         "unknown"
@@ -150,7 +150,7 @@
         "assets/relics/guardian-maris_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "睡眠耐性で眠らない、スキルカットで味方の耐久を上げる、通常時は触手を盾チク",
+      "concept": "睡眠耐性で眠らない。スキルカットで味方の耐久を上げる。通常時は触手を盾チク。",
       "bossIds": [
         "maris"
       ]
@@ -163,7 +163,7 @@
         "assets/relics/guardian-libra_2.png"
       ],
       "hpLv15": 1584,
-      "concept": "ガードヘイトで罪人トレイン、形態変化後から状態異常を狙う、属性技でガードカウンターしない",
+      "concept": "ガードヘイトで罪人トレイン。形態変化後から状態異常を狙う。属性技でガードカウンターしない。",
       "bossIds": [
         "libra"
       ]
@@ -176,7 +176,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "雷武器でチャージ阻止、ガーカンでヘイト管理",
+      "concept": "雷武器でチャージ阻止。ガーカンでヘイト管理。",
       "bossIds": [
         "fulghor"
       ]
@@ -189,7 +189,7 @@
         "assets/relics/guardian-caligo_2.png"
       ],
       "hpLv15": 1584,
-      "concept": "大技をアーツキャンセルする、炎か体勢崩しでダウンを狙う、左手にメイン武器・右手に回避戦技",
+      "concept": "大技をアーツキャンセルする。炎か体勢崩しでダウンを狙う。左手にメイン武器・右手に回避戦技。",
       "bossIds": [
         "caligo"
       ]
@@ -202,7 +202,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "大弓でヘイト管理、ガーカンと盾チク刺突回復を使い分ける",
+      "concept": "大弓でヘイト管理。ガーカンと盾チク刺突回復を使い分ける。",
       "bossIds": [
         "heolstor"
       ]
@@ -228,27 +228,8 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "とにかく楽しい、味方の2連爆破回避が不安だったらアーツを切る",
+      "concept": "とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る。",
       "bossIds": [
-        "straghess"
-      ]
-    },
-    {
-      "id": "recluse-all",
-      "characterId": "recluse",
-      "relicImages": [
-        "assets/relics/recluse-all_1.png",
-        "assets/relics/recluse-all_2.png"
-      ],
-      "hpLv15": 1342,
-      "concept": "大剣二刀バッタが強すぎる、武器ローグライクしにくい",
-      "bossIds": [
-        "adel",
-        "gnoster",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
         "straghess"
       ]
     },
@@ -260,7 +241,7 @@
         "assets/relics/ironeye-all_2.png"
       ],
       "hpLv15": 1379,
-      "concept": "ムキムキの目、武器ローグライクやりたい",
+      "concept": "ムキムキの目。武器ローグライクやりたい。",
       "bossIds": [
         "gladius",
         "adel",
@@ -298,6 +279,25 @@
       "concept": "リブラの守護者プライドバトルに負けたら出す",
       "bossIds": [
         "libra"
+      ]
+    },
+    {
+      "id": "recluse-all",
+      "characterId": "recluse",
+      "relicImages": [
+        "assets/relics/recluse-all_1.png",
+        "assets/relics/recluse-all_2.png"
+      ],
+      "hpLv15": 1342,
+      "concept": "大剣二刀バッタが強すぎる。武器ローグライクしにくい。",
+      "bossIds": [
+        "adel",
+        "gnoster",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess"
       ]
     }
   ]
