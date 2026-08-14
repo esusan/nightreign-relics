@@ -104,18 +104,17 @@
           "images": [
             "assets/relics/guardian-gladius-taikyu_1.png",
             "assets/relics/guardian-gladius-taikyu_2.png"
-          ],
-          "createdAt": "2026-07-25"
+          ]
         },
         {
           "label": "鎌見つけやすく",
           "images": [
             "assets/relics/guardian-gladius-kama_1.png",
             "assets/relics/guardian-gladius-kama_2.png"
-          ],
-          "createdAt": "2026-07-21"
+          ]
         }
-      ]
+      ],
+      "createdAt": "2026-07-25"
     },
     {
       "id": "guardian-adel",
