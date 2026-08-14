@@ -60,6 +60,12 @@ body {
   gap: 0.7rem;
 }
 
+.last-update {
+  margin: 0.5rem 0 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
 .site-icon {
   width: 44px;
   height: 44px;
@@ -284,7 +290,12 @@ body {
 .stat-row {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.stat-date {
+  margin-left: auto;
 }
 
 .stat-label {

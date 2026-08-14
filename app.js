@@ -15,6 +15,34 @@ async function main() {
 
   let selectedCharacter = "all";
 
+  loadLastUpdate();
+
+  async function loadLastUpdate() {
+    const el = document.getElementById("lastUpdate");
+    try {
+      const res = await fetch(
+        "https://api.github.com/repos/esusan/nightreign-relics/commits?path=data/relics.json&per_page=1"
+      );
+      const commits = await res.json();
+      const date = commits?.[0]?.commit?.committer?.date;
+      if (!date) return;
+      const formatted = new Date(date).toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      });
+      el.textContent = `最終更新: ${formatted}`;
+      el.hidden = false;
+    } catch {
+      // 取得できなくても表示は隠したままでよい
+    }
+  }
+
+  function formatDate(iso) {
+    if (!iso) return "";
+    return iso.replaceAll("-", "/");
+  }
+
   function buildCharacterButton(id, label, iconSrc) {
     const btn = document.createElement("button");
     btn.type = "button";
@@ -171,7 +199,9 @@ async function main() {
 
         const label = document.createElement("span");
         label.className = "relic-block-label";
-        label.textContent = group.label;
+        label.textContent = group.createdAt
+          ? `${group.label}（${formatDate(group.createdAt)}）`
+          : group.label;
         block.appendChild(label);
 
         block.appendChild(buildRelicRow(group.images ?? [], `${bossLabel}(${group.label})`));
@@ -198,6 +228,14 @@ async function main() {
     statValue.textContent = entry.hpLv15 ?? "未登録";
     stat.appendChild(statLabel);
     stat.appendChild(statValue);
+
+    if (entry.createdAt) {
+      const dateLabel = document.createElement("span");
+      dateLabel.className = "stat-label stat-date";
+      dateLabel.textContent = `登録日: ${formatDate(entry.createdAt)}`;
+      stat.appendChild(dateLabel);
+    }
+
     footer.appendChild(stat);
 
     const divider = document.createElement("hr");
