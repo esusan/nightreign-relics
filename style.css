@@ -181,6 +181,17 @@ body {
   padding: 0.15rem 0.6rem;
 }
 
+.boss-all-badge {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+}
+
 .boss-row {
   display: flex;
   flex-wrap: wrap;

@@ -103,8 +103,8 @@
       "id": "guardian-adel",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-adel_1.png",
+        "assets/relics/guardian-adel_2.png"
       ],
       "hpLv15": null,
       "concept": "装備:回避戦技・大弓orバリスタ・欠片多め / 任意:毒・竜特攻・腐敗冷気 / カット優先:被ダメ>最大 / 竜巻スタジアムをアーツキャンセルする、大弓でタゲ取って掴みからアーツ回収、刺剣で状態異常を狙う、エンチャ後は左手にメイン武器・右手に回避戦技",
@@ -213,6 +213,28 @@
       "hpLv15": null,
       "concept": "装備:盾チク武器(2日目用)・盾脂(2日目用)・大弓(2日目用) / カット優先:被ダメ>ガード>最大 / とにかく楽しい、味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
+        "straghess"
+      ]
+    },
+    {
+      "id": "recluse-all",
+      "characterId": "recluse",
+      "relicImages": [
+        "assets/relics/recluse-all_1.png",
+        "assets/relics/recluse-all_2.png"
+      ],
+      "hpLv15": null,
+      "concept": "",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
         "straghess"
       ]
     }

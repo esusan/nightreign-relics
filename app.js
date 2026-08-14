@@ -10,6 +10,7 @@ async function main() {
   const characterFilter = document.getElementById("characterFilter");
   const cardGrid = document.getElementById("cardGrid");
   const emptyState = document.getElementById("emptyState");
+  const allBossIds = data.bosses.map((b) => b.id).filter((id) => id !== "unknown");
 
   let selectedCharacter = "all";
 
@@ -83,35 +84,44 @@ async function main() {
     top.appendChild(charBadge);
     card.appendChild(top);
 
-    const bossRow = document.createElement("div");
-    bossRow.className = "boss-row";
-    for (const bossId of bossIds) {
-      const bossName = bossMap.get(bossId) ?? bossId;
-      const bossEn = bossEnMap.get(bossId);
-      const iconSrc = bossIconMap.get(bossId);
+    const isAllBosses = allBossIds.length > 0 && allBossIds.every((id) => bossIds.includes(id));
 
-      const chip = document.createElement("div");
-      chip.className = "boss-chip";
-      if (bossEn) chip.title = bossEn;
+    if (isAllBosses) {
+      const allBadge = document.createElement("span");
+      allBadge.className = "boss-all-badge";
+      allBadge.textContent = "全ボス共通";
+      card.appendChild(allBadge);
+    } else {
+      const bossRow = document.createElement("div");
+      bossRow.className = "boss-row";
+      for (const bossId of bossIds) {
+        const bossName = bossMap.get(bossId) ?? bossId;
+        const bossEn = bossEnMap.get(bossId);
+        const iconSrc = bossIconMap.get(bossId);
 
-      const icon = document.createElement(iconSrc ? "img" : "div");
-      icon.className = "boss-chip-icon" + (iconSrc ? "" : " placeholder");
-      if (iconSrc) {
-        icon.src = iconSrc;
-        icon.alt = bossName;
-      } else {
-        icon.textContent = bossName;
+        const chip = document.createElement("div");
+        chip.className = "boss-chip";
+        if (bossEn) chip.title = bossEn;
+
+        const icon = document.createElement(iconSrc ? "img" : "div");
+        icon.className = "boss-chip-icon" + (iconSrc ? "" : " placeholder");
+        if (iconSrc) {
+          icon.src = iconSrc;
+          icon.alt = bossName;
+        } else {
+          icon.textContent = bossName;
+        }
+        chip.appendChild(icon);
+
+        const name = document.createElement("span");
+        name.className = "boss-chip-name";
+        name.textContent = bossName;
+        chip.appendChild(name);
+
+        bossRow.appendChild(chip);
       }
-      chip.appendChild(icon);
-
-      const name = document.createElement("span");
-      name.className = "boss-chip-name";
-      name.textContent = bossName;
-      chip.appendChild(name);
-
-      bossRow.appendChild(chip);
+      card.appendChild(bossRow);
     }
-    card.appendChild(bossRow);
 
     const relicRow = document.createElement("div");
     relicRow.className = "relic-images";
