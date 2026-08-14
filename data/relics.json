@@ -294,6 +294,41 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "hermit-general",
+      "characterId": "hermit",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "maris",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-general_1.png",
+        "assets/relics/hermit-general_2.png"
+      ],
+      "hpLv15": "840(1260)",
+      "concept": "",
+      "createdAt": "2026-08-15"
+    },
+    {
+      "id": "hermit-caria",
+      "characterId": "hermit",
+      "bossIds": [
+        "gnoster",
+        "fulghor"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-caria_1.png",
+        "assets/relics/hermit-caria_2.png"
+      ],
+      "hpLv15": "924(1386)",
+      "concept": "",
+      "createdAt": "2026-08-15"
+    },
+    {
       "id": "hermit-libra",
       "characterId": "hermit",
       "relicImages": [
