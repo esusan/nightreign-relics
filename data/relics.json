@@ -3,22 +3,22 @@
     {
       "id": "guardian",
       "name": "守護者",
-      "icon": "assets/characters/guardian.jpg"
+      "icon": "assets/characters/guardian.png"
     },
     {
       "id": "recluse",
       "name": "追跡者",
-      "icon": "assets/characters/recluse.jpg"
+      "icon": "assets/characters/recluse.png"
     },
     {
       "id": "ironeye",
       "name": "鉄の目",
-      "icon": "assets/characters/ironeye.jpg"
+      "icon": "assets/characters/ironeye.png"
     },
     {
       "id": "hermit",
       "name": "隠者",
-      "icon": "assets/characters/hermit.jpg"
+      "icon": "assets/characters/hermit.png"
     }
   ],
   "bosses": [

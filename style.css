@@ -136,21 +136,7 @@ body {
 .character-icon {
   width: 28px;
   height: 28px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--bg);
-  border: 1px solid var(--border);
-}
-
-.character-icon.placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.4rem;
-  line-height: 1;
-  color: var(--text-muted);
-  text-align: center;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 .card-grid {
@@ -175,11 +161,20 @@ body {
 }
 
 .character-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.75rem;
   color: var(--accent);
   border: 1px solid var(--accent);
   border-radius: 999px;
-  padding: 0.15rem 0.6rem;
+  padding: 0.15rem 0.6rem 0.15rem 0.3rem;
+}
+
+.character-badge-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .variant-badge {
@@ -218,10 +213,7 @@ body {
 .boss-chip-icon {
   width: 40px;
   height: 40px;
-  border-radius: 8px;
-  object-fit: cover;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  object-fit: contain;
 }
 
 .boss-chip-icon.placeholder {

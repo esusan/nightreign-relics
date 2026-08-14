@@ -3,6 +3,7 @@ async function main() {
   const data = await res.json();
 
   const characterMap = new Map(data.characters.map((c) => [c.id, c.name]));
+  const characterIconMap = new Map(data.characters.map((c) => [c.id, c.icon]));
   const bossMap = new Map(data.bosses.map((b) => [b.id, b.name]));
   const bossIconMap = new Map(data.bosses.map((b) => [b.id, b.icon]));
   const bossEnMap = new Map(data.bosses.map((b) => [b.id, b.nameEn]));
@@ -20,15 +21,13 @@ async function main() {
     btn.className = "character-btn";
     btn.dataset.characterId = id;
 
-    const icon = document.createElement(iconSrc ? "img" : "div");
-    icon.className = "character-icon" + (iconSrc ? "" : " placeholder");
     if (iconSrc) {
+      const icon = document.createElement("img");
+      icon.className = "character-icon";
       icon.src = iconSrc;
       icon.alt = label;
-    } else {
-      icon.textContent = label;
+      btn.appendChild(icon);
     }
-    btn.appendChild(icon);
 
     const name = document.createElement("span");
     name.className = "character-btn-label";
@@ -80,7 +79,15 @@ async function main() {
     top.className = "card-top";
     const charBadge = document.createElement("span");
     charBadge.className = "character-badge";
-    charBadge.textContent = charName;
+    const charIconSrc = characterIconMap.get(entry.characterId);
+    if (charIconSrc) {
+      const charIcon = document.createElement("img");
+      charIcon.className = "character-badge-icon";
+      charIcon.src = charIconSrc;
+      charIcon.alt = "";
+      charBadge.appendChild(charIcon);
+    }
+    charBadge.appendChild(document.createTextNode(charName));
     top.appendChild(charBadge);
 
     if (entry.variant) {
