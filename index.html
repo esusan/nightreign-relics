@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遺物共有ページ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>遺物共有ページ</h1>
+  <p class="subtitle">ボス別・キャラ別に遺物構成を共有するページ</p>
+</header>
+
+<section class="filters">
+  <div class="filter-group">
+    <label for="characterFilter">対象キャラ</label>
+    <select id="characterFilter">
+      <option value="all">すべて</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="bossFilter">ボス</label>
+    <select id="bossFilter">
+      <option value="all">すべて</option>
+    </select>
+  </div>
+  <button id="resetFilters" type="button">リセット</button>
+</section>
+
+<main id="cardGrid" class="card-grid"></main>
+
+<p id="emptyState" class="empty-state" hidden>該当する遺物データがまだ登録されていない。</p>
+
+<script src="app.js"></script>
+</body>
+</html>
