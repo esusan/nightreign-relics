@@ -82,6 +82,14 @@ async function main() {
     charBadge.className = "character-badge";
     charBadge.textContent = charName;
     top.appendChild(charBadge);
+
+    if (entry.variant) {
+      const variantBadge = document.createElement("span");
+      variantBadge.className = "variant-badge";
+      variantBadge.textContent = entry.variant;
+      top.appendChild(variantBadge);
+    }
+
     card.appendChild(top);
 
     const isAllBosses = allBossIds.length > 0 && allBossIds.every((id) => bossIds.includes(id));

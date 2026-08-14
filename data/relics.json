@@ -2,19 +2,23 @@
   "characters": [
     {
       "id": "guardian",
-      "name": "守護者"
+      "name": "守護者",
+      "icon": "assets/characters/guardian.jpg"
     },
     {
       "id": "recluse",
-      "name": "追跡者"
+      "name": "追跡者",
+      "icon": "assets/characters/recluse.jpg"
     },
     {
       "id": "ironeye",
-      "name": "鉄の目"
+      "name": "鉄の目",
+      "icon": "assets/characters/ironeye.jpg"
     },
     {
       "id": "hermit",
-      "name": "隠者"
+      "name": "隠者",
+      "icon": "assets/characters/hermit.jpg"
     }
   ],
   "bosses": [
@@ -87,26 +91,13 @@
   ],
   "entries": [
     {
-      "id": "guardian-gladius",
-      "characterId": "guardian",
-      "relicImages": [
-        "",
-        ""
-      ],
-      "hpLv15": null,
-      "concept": "装備:回避戦技(できれば猟犬)・大弓・欠片多め、戦技付き大盾はNGで初期盾を強化 / 任意:炎カット / カット優先:最大>被ダメ / 大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
-      "bossIds": [
-        "gladius"
-      ]
-    },
-    {
       "id": "guardian-adel",
       "characterId": "guardian",
       "relicImages": [
         "assets/relics/guardian-adel_1.png",
         "assets/relics/guardian-adel_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1540,
       "concept": "装備:回避戦技・大弓orバリスタ・欠片多め / 任意:毒・竜特攻・腐敗冷気 / カット優先:被ダメ>最大 / 竜巻スタジアムをアーツキャンセルする、大弓でタゲ取って掴みからアーツ回収、刺剣で状態異常を狙う、エンチャ後は左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "adel"
@@ -119,7 +110,7 @@
         "",
         ""
       ],
-      "hpLv15": null,
+      "hpLv15": 1621,
       "concept": "装備:大弓・ガーカン届く武器 / 任意:ガーカン強化・毒・腐敗・冷気 / カット優先:被ダメ>(ガード) / 基本は大弓でグノ担当、明らかにグノ担当がいる場合はガーカン付帯を積む",
       "bossIds": [
         "gnoster"
@@ -129,10 +120,10 @@
       "id": "guardian-maris",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-maris_1.png",
+        "assets/relics/guardian-maris_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1694,
       "concept": "装備:盾チク武器・大弓(星獣用) / 任意:聖域・回復祈祷 / カット優先:最大>被ダメ / 睡眠耐性で眠らない、スキルカットで味方の耐久を上げる、通常時は触手を盾チク",
       "bossIds": [
         "maris"
@@ -142,10 +133,10 @@
       "id": "guardian-libra",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-libra_1.png",
+        "assets/relics/guardian-libra_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1584,
       "concept": "装備:クロスボウ・発狂苔 / 任意:毒・腐敗・冷気 / カット優先:被ダメ>最大 / ガードヘイトで罪人トレイン、形態変化後から状態異常を狙う、属性技でガードカウンターしない",
       "bossIds": [
         "libra"
@@ -158,7 +149,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1694,
       "concept": "装備:雷武器・盾チク武器(無名用)・盾脂(無名用) / 任意:毒・腐敗・冷気、聖カット系 / カット優先:被ダメ>ガード>最大 / 雷武器でチャージ阻止、ガーカンでヘイト管理",
       "bossIds": [
         "fulghor"
@@ -168,10 +159,10 @@
       "id": "guardian-caligo",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-caligo_1.png",
+        "assets/relics/guardian-caligo_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1584,
       "concept": "装備:回避戦技(できれば猟犬)・炎か体勢崩し・欠片多め・大弓(踊り子用) / 任意:FP回復系の付帯 / カット優先:被ダメ>タメ / 大技をアーツキャンセルする、炎か体勢崩しでダウンを狙う、左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "caligo"
@@ -184,7 +175,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1694,
       "concept": "装備:回避戦技・斧槍>盾チク武器・大弓 / 任意:魔力カット系 / カット優先:被ダメ>ガード>最大 / 大弓でヘイト管理、ガーカンと盾チク刺突回復を使い分ける",
       "bossIds": [
         "heolstor"
@@ -194,10 +185,10 @@
       "id": "guardian-harmonia",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-harmonia_1.png",
+        "assets/relics/guardian-harmonia_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1474,
       "concept": "装備:斧槍・ガーカン付帯・大弓(モーグのみ) / カット優先:ガード>被ダメ>最大 / ガーカンでタイマンでも倒せるように火力を出す",
       "bossIds": [
         "harmonia"
@@ -210,7 +201,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
-      "hpLv15": null,
+      "hpLv15": 1694,
       "concept": "装備:盾チク武器(2日目用)・盾脂(2日目用)・大弓(2日目用) / カット優先:被ダメ>ガード>最大 / とにかく楽しい、味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
         "straghess"
@@ -223,19 +214,93 @@
         "assets/relics/recluse-all_1.png",
         "assets/relics/recluse-all_2.png"
       ],
-      "hpLv15": null,
-      "concept": "",
+      "hpLv15": 1342,
+      "concept": "大剣バッタが強すぎる、武器ローグライクしにくい",
       "bossIds": [
         "gladius",
         "adel",
         "gnoster",
         "maris",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess"
+      ]
+    },
+    {
+      "id": "ironeye-all",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-all_1.png",
+        "assets/relics/ironeye-all_2.png"
+      ],
+      "hpLv15": 1379,
+      "concept": "ムキムキ、武器ローグライクやりたい",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
         "libra",
         "fulghor",
         "caligo",
         "heolstor",
         "harmonia",
         "straghess"
+      ]
+    },
+    {
+      "id": "ironeye-maris",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-maris_1.png",
+        "assets/relics/ironeye-maris_2.png"
+      ],
+      "hpLv15": 1254,
+      "concept": "さすがに睡眠耐性積ませてください",
+      "bossIds": [
+        "maris"
+      ]
+    },
+    {
+      "id": "hermit-libra",
+      "characterId": "hermit",
+      "relicImages": [
+        "assets/relics/hermit-libra_1.png",
+        "assets/relics/hermit-libra_2.png"
+      ],
+      "hpLv15": "968(1452)",
+      "concept": "リブラに守護者プライドバトルに負けたら出す",
+      "bossIds": [
+        "libra"
+      ]
+    },
+    {
+      "id": "guardian-gladius-taikyu",
+      "characterId": "guardian",
+      "variant": "耐久特化",
+      "relicImages": [
+        "assets/relics/guardian-gladius-taikyu_1.png",
+        "assets/relics/guardian-gladius-taikyu_2.png"
+      ],
+      "hpLv15": 1742,
+      "concept": "装備:回避戦技(できれば猟犬)・大弓・欠片多め、戦技付き大盾はNGで初期盾を強化 / 任意:炎カット / カット優先:最大>被ダメ / 大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
+      "bossIds": [
+        "gladius"
+      ]
+    },
+    {
+      "id": "guardian-gladius-kama",
+      "characterId": "guardian",
+      "variant": "鎌見つけやすく",
+      "relicImages": [
+        "assets/relics/guardian-gladius-kama_1.png",
+        "assets/relics/guardian-gladius-kama_2.png"
+      ],
+      "hpLv15": 1742,
+      "concept": "装備:回避戦技(できれば猟犬)・大弓・欠片多め、戦技付き大盾はNGで初期盾を強化 / 任意:炎カット / カット優先:最大>被ダメ / 大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
+      "bossIds": [
+        "gladius"
       ]
     }
   ]
