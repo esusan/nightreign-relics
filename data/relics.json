@@ -97,7 +97,7 @@
         "gladius"
       ],
       "hpLv15": 1742,
-      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする",
+      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする、サイス振りそうなキャラピックだったら鎌見つけやすくを採用する",
       "variantGroups": [
         {
           "label": "耐久特化",
@@ -270,7 +270,8 @@
         "caligo",
         "heolstor",
         "harmonia",
-        "straghess"
+        "straghess",
+        "unknown"
       ]
     },
     {
