@@ -152,95 +152,103 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.8rem;
 }
 
-.card-top {
+.card-header {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.character-badge {
+.header-who {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: bold;
   color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  padding: 0.15rem 0.6rem 0.15rem 0.3rem;
+  white-space: nowrap;
 }
 
-.character-badge-icon {
-  width: 18px;
-  height: 18px;
+.header-who img {
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 }
 
-.variant-badge {
-  font-size: 0.75rem;
+.header-sep {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.header-bosses {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.header-boss {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.header-bosses.single .header-boss img {
+  width: 44px;
+  height: 44px;
+}
+
+.header-boss img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.header-boss-all {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+
+.header-tag {
+  margin-left: auto;
+  font-size: 0.7rem;
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 0.15rem 0.6rem;
 }
 
-.boss-all-badge {
-  align-self: flex-start;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--text);
-  background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+.relic-block {
+  position: relative;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.3rem 0.9rem;
+  border-radius: 10px;
+  background: var(--bg);
+  padding: 0.7rem;
 }
 
-.boss-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+.relic-block + .relic-block {
+  margin-top: 0.2rem;
 }
 
-.boss-chip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  width: 96px;
-}
-
-.boss-chip-icon {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
-.boss-chip-icon.placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.6rem;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-.boss-chip-name {
-  font-size: 0.65rem;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.variant-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.variant-group-label {
-  font-size: 0.8rem;
+.relic-block-label {
+  position: absolute;
+  top: -0.65rem;
+  left: 0.7rem;
+  font-size: 0.7rem;
   font-weight: bold;
-  color: var(--text);
+  color: var(--accent-text);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
 }
 
 .relic-images {
@@ -253,7 +261,7 @@ body {
   min-width: 0;
   border-radius: 8px;
   border: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--surface);
 }
 
 .relic-image {
@@ -271,13 +279,33 @@ body {
   color: var(--text-muted);
 }
 
-.hp-row {
-  font-size: 0.85rem;
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stat-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.7rem;
   color: var(--text-muted);
 }
 
-.hp-row strong {
+.stat-value {
+  font-size: 1.15rem;
+  font-weight: bold;
   color: var(--text);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
 }
 
 .concept {

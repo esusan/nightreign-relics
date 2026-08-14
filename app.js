@@ -71,73 +71,76 @@ async function main() {
     const charName = characterMap.get(entry.characterId) ?? entry.characterId;
     const bossIds = entry.bossIds ?? [];
     const bossNames = bossIds.map((id) => bossMap.get(id) ?? id);
+    const isAllBosses = allBossIds.length > 0 && allBossIds.every((id) => bossIds.includes(id));
 
     const card = document.createElement("article");
     card.className = "card";
 
-    const top = document.createElement("div");
-    top.className = "card-top";
-    const charBadge = document.createElement("span");
-    charBadge.className = "character-badge";
+    // --- header: who + vs boss(es) + variant/all tag, all on one line ---
+    const header = document.createElement("div");
+    header.className = "card-header";
+
+    const who = document.createElement("div");
+    who.className = "header-who";
     const charIconSrc = characterIconMap.get(entry.characterId);
     if (charIconSrc) {
       const charIcon = document.createElement("img");
-      charIcon.className = "character-badge-icon";
       charIcon.src = charIconSrc;
       charIcon.alt = "";
-      charBadge.appendChild(charIcon);
+      who.appendChild(charIcon);
     }
-    charBadge.appendChild(document.createTextNode(charName));
-    top.appendChild(charBadge);
+    who.appendChild(document.createTextNode(charName));
+    header.appendChild(who);
 
-    if (entry.variant) {
-      const variantBadge = document.createElement("span");
-      variantBadge.className = "variant-badge";
-      variantBadge.textContent = entry.variant;
-      top.appendChild(variantBadge);
-    }
+    const sep = document.createElement("span");
+    sep.className = "header-sep";
+    sep.textContent = "vs";
+    header.appendChild(sep);
 
-    card.appendChild(top);
-
-    const isAllBosses = allBossIds.length > 0 && allBossIds.every((id) => bossIds.includes(id));
+    const bosses = document.createElement("div");
+    bosses.className = "header-bosses";
+    bosses.classList.toggle("single", bossIds.length === 1);
 
     if (isAllBosses) {
-      const allBadge = document.createElement("span");
-      allBadge.className = "boss-all-badge";
-      allBadge.textContent = "全ボス共通";
-      card.appendChild(allBadge);
+      const allTag = document.createElement("span");
+      allTag.className = "header-boss-all";
+      allTag.textContent = "全ボス共通";
+      bosses.appendChild(allTag);
     } else {
-      const bossRow = document.createElement("div");
-      bossRow.className = "boss-row";
       for (const bossId of bossIds) {
         const bossName = bossMap.get(bossId) ?? bossId;
         const bossEn = bossEnMap.get(bossId);
         const iconSrc = bossIconMap.get(bossId);
 
-        const chip = document.createElement("div");
-        chip.className = "boss-chip";
+        const chip = document.createElement("span");
+        chip.className = "header-boss";
         if (bossEn) chip.title = bossEn;
 
-        const icon = document.createElement(iconSrc ? "img" : "div");
-        icon.className = "boss-chip-icon" + (iconSrc ? "" : " placeholder");
         if (iconSrc) {
+          const icon = document.createElement("img");
           icon.src = iconSrc;
           icon.alt = bossName;
-        } else {
-          icon.textContent = bossName;
+          chip.appendChild(icon);
         }
-        chip.appendChild(icon);
-
         const name = document.createElement("span");
-        name.className = "boss-chip-name";
         name.textContent = bossName;
         chip.appendChild(name);
 
-        bossRow.appendChild(chip);
+        bosses.appendChild(chip);
       }
-      card.appendChild(bossRow);
+    }
+    header.appendChild(bosses);
+
+    if (entry.variant) {
+      const variantTag = document.createElement("span");
+      variantTag.className = "header-tag";
+      variantTag.textContent = entry.variant;
+      header.appendChild(variantTag);
     }
 
+    card.appendChild(header);
+
+    // --- relic screenshot block(s), boxed and labeled ---
     function buildRelicRow(images, altPrefix) {
       const row = document.createElement("div");
       row.className = "relic-images";
@@ -163,30 +166,50 @@ async function main() {
 
     if (entry.variantGroups) {
       for (const group of entry.variantGroups) {
-        const groupWrap = document.createElement("div");
-        groupWrap.className = "variant-group";
+        const block = document.createElement("div");
+        block.className = "relic-block";
 
         const label = document.createElement("span");
-        label.className = "variant-group-label";
+        label.className = "relic-block-label";
         label.textContent = group.label;
-        groupWrap.appendChild(label);
+        block.appendChild(label);
 
-        groupWrap.appendChild(buildRelicRow(group.images ?? [], `${bossLabel}(${group.label})`));
-        card.appendChild(groupWrap);
+        block.appendChild(buildRelicRow(group.images ?? [], `${bossLabel}(${group.label})`));
+        card.appendChild(block);
       }
     } else {
-      card.appendChild(buildRelicRow(entry.relicImages ?? [], bossLabel));
+      const block = document.createElement("div");
+      block.className = "relic-block";
+      block.appendChild(buildRelicRow(entry.relicImages ?? [], bossLabel));
+      card.appendChild(block);
     }
 
-    const hpRow = document.createElement("div");
-    hpRow.className = "hp-row";
-    hpRow.innerHTML = `Lv15 HP: <strong>${entry.hpLv15 ?? "未登録"}</strong>`;
-    card.appendChild(hpRow);
+    // --- footer: HP stat + divider + concept text ---
+    const footer = document.createElement("div");
+    footer.className = "card-footer";
+
+    const stat = document.createElement("div");
+    stat.className = "stat-row";
+    const statLabel = document.createElement("span");
+    statLabel.className = "stat-label";
+    statLabel.textContent = "Lv15 HP";
+    const statValue = document.createElement("span");
+    statValue.className = "stat-value";
+    statValue.textContent = entry.hpLv15 ?? "未登録";
+    stat.appendChild(statLabel);
+    stat.appendChild(statValue);
+    footer.appendChild(stat);
+
+    const divider = document.createElement("hr");
+    divider.className = "divider";
+    footer.appendChild(divider);
 
     const concept = document.createElement("p");
     concept.className = "concept";
     concept.textContent = entry.concept ?? "";
-    card.appendChild(concept);
+    footer.appendChild(concept);
+
+    card.appendChild(footer);
 
     return card;
   }
