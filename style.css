@@ -30,6 +30,11 @@ body {
   padding: 0 1.5rem 3rem;
 }
 
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .site-header {
   padding: 2.5rem 0 1rem;
   border-bottom: 1px solid var(--border);
@@ -150,7 +155,7 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.2rem;
 }
 
@@ -221,14 +226,20 @@ body {
 
 .relic-image, .relic-image-placeholder {
   flex: 1;
-  aspect-ratio: 1 / 1;
+  min-width: 0;
   border-radius: 8px;
   border: 1px solid var(--border);
-  object-fit: cover;
   background: var(--bg);
 }
 
+.relic-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .relic-image-placeholder {
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;

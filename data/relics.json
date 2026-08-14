@@ -155,8 +155,8 @@
       "id": "guardian-fulghor",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
+        "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": null,
       "concept": "装備:雷武器・盾チク武器(無名用)・盾脂(無名用) / 任意:毒・腐敗・冷気、聖カット系 / カット優先:被ダメ>ガード>最大 / 雷武器でチャージ阻止、ガーカンでヘイト管理",
@@ -181,8 +181,8 @@
       "id": "guardian-heolstor",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
+        "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": null,
       "concept": "装備:回避戦技・斧槍>盾チク武器・大弓 / 任意:魔力カット系 / カット優先:被ダメ>ガード>最大 / 大弓でヘイト管理、ガーカンと盾チク刺突回復を使い分ける",
@@ -207,8 +207,8 @@
       "id": "guardian-straghess",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
+        "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": null,
       "concept": "装備:盾チク武器(2日目用)・盾脂(2日目用)・大弓(2日目用) / カット優先:被ダメ>ガード>最大 / とにかく楽しい、味方の2連爆破回避が不安だったらアーツを切る",
