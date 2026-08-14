@@ -68,49 +68,50 @@ async function main() {
   }
 
   function buildCard(entry) {
-    const bossName = bossMap.get(entry.bossId) ?? entry.bossId;
     const charName = characterMap.get(entry.characterId) ?? entry.characterId;
+    const bossIds = entry.bossIds ?? [];
+    const bossNames = bossIds.map((id) => bossMap.get(id) ?? id);
 
     const card = document.createElement("article");
     card.className = "card";
 
-    const head = document.createElement("div");
-    head.className = "card-head";
+    const top = document.createElement("div");
+    top.className = "card-top";
+    const charBadge = document.createElement("span");
+    charBadge.className = "character-badge";
+    charBadge.textContent = charName;
+    top.appendChild(charBadge);
+    card.appendChild(top);
 
-    const iconSrc = bossIconMap.get(entry.bossId);
-    const icon = document.createElement(iconSrc ? "img" : "div");
-    icon.className = "boss-icon" + (iconSrc ? "" : " placeholder");
-    if (iconSrc) {
-      icon.src = iconSrc;
-      icon.alt = bossName;
-    } else {
-      icon.textContent = bossName;
+    const bossRow = document.createElement("div");
+    bossRow.className = "boss-row";
+    for (const bossId of bossIds) {
+      const bossName = bossMap.get(bossId) ?? bossId;
+      const bossEn = bossEnMap.get(bossId);
+      const iconSrc = bossIconMap.get(bossId);
+
+      const chip = document.createElement("div");
+      chip.className = "boss-chip";
+      if (bossEn) chip.title = bossEn;
+
+      const icon = document.createElement(iconSrc ? "img" : "div");
+      icon.className = "boss-chip-icon" + (iconSrc ? "" : " placeholder");
+      if (iconSrc) {
+        icon.src = iconSrc;
+        icon.alt = bossName;
+      } else {
+        icon.textContent = bossName;
+      }
+      chip.appendChild(icon);
+
+      const name = document.createElement("span");
+      name.className = "boss-chip-name";
+      name.textContent = bossName;
+      chip.appendChild(name);
+
+      bossRow.appendChild(chip);
     }
-    head.appendChild(icon);
-
-    const titles = document.createElement("div");
-    titles.className = "card-titles";
-    const bossEl = document.createElement("span");
-    bossEl.className = "boss-name";
-    bossEl.textContent = bossName;
-    titles.appendChild(bossEl);
-
-    const bossEn = bossEnMap.get(entry.bossId);
-    if (bossEn) {
-      const bossEnEl = document.createElement("span");
-      bossEnEl.className = "boss-name-en";
-      bossEnEl.textContent = bossEn;
-      titles.appendChild(bossEnEl);
-    }
-
-    const charEl = document.createElement("span");
-    charEl.className = "character-name";
-    charEl.textContent = charName;
-    titles.appendChild(charEl);
-
-    head.appendChild(titles);
-
-    card.appendChild(head);
+    card.appendChild(bossRow);
 
     const relicRow = document.createElement("div");
     relicRow.className = "relic-images";
@@ -121,7 +122,7 @@ async function main() {
         const img = document.createElement("img");
         img.className = "relic-image";
         img.src = src;
-        img.alt = `${bossName}の遺物${i + 1}`;
+        img.alt = `${bossNames.join("・")}の遺物${i + 1}`;
         relicRow.appendChild(img);
       } else {
         const ph = document.createElement("div");

@@ -127,49 +127,54 @@ body {
   gap: 0.7rem;
 }
 
-.card-head {
+.card-top {
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
 }
 
-.boss-icon {
-  width: 42px;
-  height: 42px;
+.character-badge {
+  font-size: 0.75rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+.boss-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.boss-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 56px;
+}
+
+.boss-chip-icon {
+  width: 40px;
+  height: 40px;
   border-radius: 8px;
   object-fit: cover;
   background: var(--bg);
   border: 1px solid var(--border);
 }
 
-.boss-icon.placeholder {
+.boss-chip-icon.placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: var(--text-muted);
   text-align: center;
 }
 
-.card-titles {
-  display: flex;
-  flex-direction: column;
-}
-
-.boss-name {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.boss-name-en {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.character-name {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+.boss-chip-name {
+  font-size: 0.65rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .relic-images {

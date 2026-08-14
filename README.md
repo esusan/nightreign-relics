@@ -17,14 +17,14 @@
 {
   "id": "guardian-adel",
   "characterId": "guardian",
-  "bossId": "adel",
+  "bossIds": ["adel"],
   "relicImages": ["assets/relics/guardian-adel_1.png", "assets/relics/guardian-adel_2.png"],
   "hpLv15": 1234,
   "concept": "コンセプト文言"
 }
 ```
 
-`characterId` / `bossId` は `characters` / `bosses` 配列の `id` と対応させる。ボスアイコンは `bosses` 配列側の `icon` に持たせてあるので、エントリ側では指定しない。
+`characterId` / `bossIds` は `characters` / `bosses` 配列の `id` と対応させる。同じ遺物構成を複数ボスで使い回す場合は `bossIds` に複数指定する（例: `["adel", "gnoster"]`）。ボスアイコンは `bosses` 配列側の `icon` に持たせてあるので、エントリ側では指定しない。
 
 ## 遺物画像のトリミング
 

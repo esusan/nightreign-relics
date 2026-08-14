@@ -89,112 +89,132 @@
     {
       "id": "guardian-gladius",
       "characterId": "guardian",
-      "bossId": "gladius",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:猟犬>クイステ>猛禽 / 武器:大弓・盾チク・欠片多め / 戦技付き大盾:だめ / カット優先:最大>被ダメ / 任意:炎カット・FP回復系の付帯 / 大弓でタゲ取って生き残る"
+      "concept": "回避戦技:猟犬>クイステ>猛禽 / 武器:大弓・盾チク・欠片多め / 戦技付き大盾:だめ / カット優先:最大>被ダメ / 任意:炎カット・FP回復系の付帯 / 大弓でタゲ取って生き残る",
+      "bossIds": [
+        "gladius"
+      ]
     },
     {
       "id": "guardian-adel",
       "characterId": "guardian",
-      "bossId": "adel",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:クイステ>なんでも / 武器:大弓かバリスタ・刺剣・欠片多め / 戦技付き大盾:OK / カット優先:被ダメ>最大 / 任意:毒・竜特攻・腐敗冷気 / 竜巻スタジアムを止めつつ大弓でタゲ取ってアーツ回収、刺剣で状態異常"
+      "concept": "回避戦技:クイステ>なんでも / 武器:大弓かバリスタ・刺剣・欠片多め / 戦技付き大盾:OK / カット優先:被ダメ>最大 / 任意:毒・竜特攻・腐敗冷気 / 竜巻スタジアムを止めつつ大弓でタゲ取ってアーツ回収、刺剣で状態異常",
+      "bossIds": [
+        "adel"
+      ]
     },
     {
       "id": "guardian-gnoster",
       "characterId": "guardian",
-      "bossId": "gnoster",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なし / 武器:大弓・ガーカン届く武器 / 戦技付き大盾:OK / カット優先:被ダメ>(ガード) / 任意:ガーカン強化 / ガーカンで火力を担保しつつ大弓でグノ担当"
+      "concept": "回避戦技:なし / 武器:大弓・ガーカン届く武器 / 戦技付き大盾:OK / カット優先:被ダメ>(ガード) / 任意:ガーカン強化 / ガーカンで火力を担保しつつ大弓でグノ担当",
+      "bossIds": [
+        "gnoster"
+      ]
     },
     {
       "id": "guardian-maris",
       "characterId": "guardian",
-      "bossId": "maris",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なんでも / 武器:盾チク / 戦技付き大盾:OK / カット優先:最大>被ダメ / 任意:聖域 / 寝ずにスキルカットを撒いて生き残る"
+      "concept": "回避戦技:なんでも / 武器:盾チク / 戦技付き大盾:OK / カット優先:最大>被ダメ / 任意:聖域 / 寝ずにスキルカットを撒いて生き残る",
+      "bossIds": [
+        "maris"
+      ]
     },
     {
       "id": "guardian-libra",
       "characterId": "guardian",
-      "bossId": "libra",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なし / 武器:クロスボウ>弓 / 戦技付き大盾:OK / カット優先:被ダメ>最大 / 任意:毒・腐敗・冷気、発狂耐性 / ガードでヘイトを取り、隙を見て状態異常を狙う"
+      "concept": "回避戦技:なし / 武器:クロスボウ>弓 / 戦技付き大盾:OK / カット優先:被ダメ>最大 / 任意:毒・腐敗・冷気、発狂耐性 / ガードでヘイトを取り、隙を見て状態異常を狙う",
+      "bossIds": [
+        "libra"
+      ]
     },
     {
       "id": "guardian-fulghor",
       "characterId": "guardian",
-      "bossId": "fulghor",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なし / 武器:雷武器・盾チクと盾脂(無名用) / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:毒腐敗冷気、聖カット高い盾 / チャージを阻止し、ガーカンでヘイト管理"
+      "concept": "回避戦技:なし / 武器:雷武器・盾チクと盾脂(無名用) / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:毒腐敗冷気、聖カット高い盾 / チャージを阻止し、ガーカンでヘイト管理",
+      "bossIds": [
+        "fulghor"
+      ]
     },
     {
       "id": "guardian-caligo",
       "characterId": "guardian",
-      "bossId": "caligo",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:猟犬>クイステ>なんでも / 武器:炎か体勢崩し武器、大弓(踊り子用)・欠片多め / 戦技付き大盾:OK / カット優先:被ダメ(重量武器ならタメ、軽量武器なら連続) / 任意:FP回復系の付帯 / 大技阻止が課題、DPSチェックにも注意"
+      "concept": "回避戦技:猟犬>クイステ>なんでも / 武器:炎か体勢崩し武器、大弓(踊り子用)・欠片多め / 戦技付き大盾:OK / カット優先:被ダメ(重量武器ならタメ、軽量武器なら連続) / 任意:FP回復系の付帯 / 大技阻止が課題、DPSチェックにも注意",
+      "bossIds": [
+        "caligo"
+      ]
     },
     {
       "id": "guardian-heolstor",
       "characterId": "guardian",
-      "bossId": "heolstor",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なんでも / 武器:斧槍>盾チク・大弓 / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:魔力カット高い盾 / 大技だけ回避戦技、盾チクで刺突回復"
+      "concept": "回避戦技:なんでも / 武器:斧槍>盾チク・大弓 / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:魔力カット高い盾 / 大技だけ回避戦技、盾チクで刺突回復",
+      "bossIds": [
+        "heolstor"
+      ]
     },
     {
       "id": "guardian-harmonia",
       "characterId": "guardian",
-      "bossId": "harmonia",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なし / 武器:斧槍、(モーグ)回避戦技か大弓 / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:ガーカン強化 / ガーカンを積んで1人でも倒せるようにする"
+      "concept": "回避戦技:なし / 武器:斧槍、(モーグ)回避戦技か大弓 / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:ガーカン強化 / ガーカンを積んで1人でも倒せるようにする",
+      "bossIds": [
+        "harmonia"
+      ]
     },
     {
       "id": "guardian-straghess",
       "characterId": "guardian",
-      "bossId": "straghess",
       "relicImages": [
         "",
         ""
       ],
       "hpLv15": null,
-      "concept": "回避戦技:なし / 武器:盾チク・盾脂、大弓(2日目用) / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:なし / 2連爆破だけ回避戦技、盾チクで刺突回復"
+      "concept": "回避戦技:なし / 武器:盾チク・盾脂、大弓(2日目用) / 戦技付き大盾:OK / カット優先:被ダメ>ガード>最大 / 任意:なし / 2連爆破だけ回避戦技、盾チクで刺突回復",
+      "bossIds": [
+        "straghess"
+      ]
     }
   ]
 }
