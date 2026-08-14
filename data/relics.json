@@ -296,20 +296,6 @@
       "createdAt": "2026-08-14"
     },
     {
-      "id": "recluse-caligo",
-      "characterId": "recluse",
-      "bossIds": [
-        "caligo"
-      ],
-      "relicImages": [
-        "assets/relics/recluse-caligo_1.png",
-        ""
-      ],
-      "hpLv15": null,
-      "concept": "何も考えることがない。",
-      "createdAt": "2026-08-15"
-    },
-    {
       "id": "recluse-all",
       "characterId": "recluse",
       "relicImages": [
@@ -324,8 +310,23 @@
         "fulghor",
         "heolstor",
         "harmonia",
-        "straghess"
+        "straghess",
+        "unknown"
       ],
+      "createdAt": "2026-08-15"
+    },
+    {
+      "id": "recluse-caligo",
+      "characterId": "recluse",
+      "bossIds": [
+        "caligo"
+      ],
+      "relicImages": [
+        "assets/relics/recluse-caligo_1.png",
+        "assets/relics/recluse-caligo_2.png"
+      ],
+      "hpLv15": null,
+      "concept": "何も考えることがない。",
       "createdAt": "2026-08-15"
     }
   ]
