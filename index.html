@@ -9,23 +9,12 @@
 <body>
 <header class="site-header">
   <h1>遺物共有ページ</h1>
-  <p class="subtitle">ボス別・キャラ別に遺物構成を共有するページ</p>
+  <p class="subtitle">キャラ別に遺物構成を共有するページ</p>
 </header>
 
 <section class="filters">
-  <div class="filter-group">
-    <label for="characterFilter">対象キャラ</label>
-    <select id="characterFilter">
-      <option value="all">すべて</option>
-    </select>
-  </div>
-  <div class="filter-group">
-    <label for="bossFilter">ボス</label>
-    <select id="bossFilter">
-      <option value="all">すべて</option>
-    </select>
-  </div>
-  <button id="resetFilters" type="button">リセット</button>
+  <span class="filter-label">対象キャラ</span>
+  <div id="characterFilter" class="character-filter"></div>
 </section>
 
 <main id="cardGrid" class="card-grid"></main>

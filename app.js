@@ -8,32 +8,55 @@ async function main() {
   const bossEnMap = new Map(data.bosses.map((b) => [b.id, b.nameEn]));
 
   const characterFilter = document.getElementById("characterFilter");
-  const bossFilter = document.getElementById("bossFilter");
   const cardGrid = document.getElementById("cardGrid");
   const emptyState = document.getElementById("emptyState");
-  const resetBtn = document.getElementById("resetFilters");
 
-  for (const c of data.characters) {
-    const opt = document.createElement("option");
-    opt.value = c.id;
-    opt.textContent = c.name;
-    characterFilter.appendChild(opt);
+  let selectedCharacter = "all";
+
+  function buildCharacterButton(id, label, iconSrc) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "character-btn";
+    btn.dataset.characterId = id;
+
+    const icon = document.createElement(iconSrc ? "img" : "div");
+    icon.className = "character-icon" + (iconSrc ? "" : " placeholder");
+    if (iconSrc) {
+      icon.src = iconSrc;
+      icon.alt = label;
+    } else {
+      icon.textContent = label;
+    }
+    btn.appendChild(icon);
+
+    const name = document.createElement("span");
+    name.className = "character-btn-label";
+    name.textContent = label;
+    btn.appendChild(name);
+
+    btn.addEventListener("click", () => {
+      selectedCharacter = id;
+      updateActiveButton();
+      render();
+    });
+
+    return btn;
   }
-  for (const b of data.bosses) {
-    const opt = document.createElement("option");
-    opt.value = b.id;
-    opt.textContent = b.nameEn ? `${b.name}（${b.nameEn}）` : b.name;
-    bossFilter.appendChild(opt);
+
+  characterFilter.appendChild(buildCharacterButton("all", "すべて", ""));
+  for (const c of data.characters) {
+    characterFilter.appendChild(buildCharacterButton(c.id, c.name, c.icon));
+  }
+
+  function updateActiveButton() {
+    for (const btn of characterFilter.querySelectorAll(".character-btn")) {
+      btn.classList.toggle("active", btn.dataset.characterId === selectedCharacter);
+    }
   }
 
   function render() {
-    const charSel = characterFilter.value;
-    const bossSel = bossFilter.value;
-
     const filtered = data.entries.filter((e) => {
-      const charOk = charSel === "all" || e.characterId === charSel;
-      const bossOk = bossSel === "all" || e.bossId === bossSel;
-      return charOk && bossOk;
+      return selectedCharacter === "all" || e.characterId === selectedCharacter;
     });
 
     cardGrid.innerHTML = "";
@@ -84,6 +107,7 @@ async function main() {
     charEl.className = "character-name";
     charEl.textContent = charName;
     titles.appendChild(charEl);
+
     head.appendChild(titles);
 
     card.appendChild(head);
@@ -121,14 +145,7 @@ async function main() {
     return card;
   }
 
-  characterFilter.addEventListener("change", render);
-  bossFilter.addEventListener("change", render);
-  resetBtn.addEventListener("click", () => {
-    characterFilter.value = "all";
-    bossFilter.value = "all";
-    render();
-  });
-
+  updateActiveButton();
   render();
 }
 
