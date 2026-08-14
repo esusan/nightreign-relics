@@ -107,13 +107,14 @@
       "id": "guardian-gnoster",
       "characterId": "guardian",
       "relicImages": [
-        "",
-        ""
+        "assets/relics/guardian-gnoster-unknown_1.png",
+        "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
       "concept": "装備:大弓・ガーカン届く武器 / 任意:ガーカン強化・毒・腐敗・冷気 / カット優先:被ダメ>(ガード) / 基本は大弓でグノ担当、明らかにグノ担当がいる場合はガーカン付帯を積む",
       "bossIds": [
-        "gnoster"
+        "gnoster",
+        "unknown"
       ]
     },
     {
