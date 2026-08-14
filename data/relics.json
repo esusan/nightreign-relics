@@ -138,7 +138,7 @@
         "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
-      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。ランダムはハルモニアケア。",
+      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。",
       "bossIds": [
         "gnoster"
       ],
@@ -250,7 +250,7 @@
         "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
-      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む。ランダムはハルモニアケア。",
+      "concept": "ハルモニアケア。",
       "bossIds": [
         "unknown"
       ],
