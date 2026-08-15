@@ -91,6 +91,29 @@
   ],
   "entries": [
     {
+      "id": "ironeye-mukimuki",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-mukimuki_1.png",
+        "assets/relics/ironeye-mukimuki_2.png"
+      ],
+      "hpLv15": 1379,
+      "concept": "ムキムキの目。武器ローグライクやりたい",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-08-14"
+    },
+    {
       "id": "guardian-gladius",
       "characterId": "guardian",
       "bossIds": [
