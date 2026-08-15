@@ -294,6 +294,20 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "ironeye-straghess",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-straghess_1.png",
+        "assets/relics/ironeye-straghess_2.png"
+      ],
+      "hpLv15": 1258,
+      "concept": "ダメージを受けた直後の攻撃でHP回復。ガードカウンター強化と刺突カウンターでも回復",
+      "bossIds": [
+        "straghess"
+      ],
+      "createdAt": "2026-08-16"
+    },
+    {
       "id": "hermit-libra",
       "characterId": "hermit",
       "relicImages": [
