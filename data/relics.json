@@ -91,21 +91,6 @@
   ],
   "entries": [
     {
-      "id": "ironeye-mukimuki",
-      "characterId": "ironeye",
-      "relicImages": [
-        "assets/relics/ironeye-mukimuki_1.png",
-        "assets/relics/ironeye-mukimuki_2.png"
-      ],
-      "hpLv15": 1379,
-      "concept": "ムキムキの目。武器ローグライクやりたい",
-      "bossIds": [
-        "gladius",
-        "caligo"
-      ],
-      "createdAt": "2026-08-14"
-    },
-    {
       "id": "guardian-gladius",
       "characterId": "guardian",
       "bossIds": [
@@ -188,16 +173,18 @@
       "createdAt": "2026-07-25"
     },
     {
-      "id": "guardian-fulghor",
+      "id": "guardian-fulghor-heolstor-straghess",
       "characterId": "guardian",
       "relicImages": [
         "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "雷武器でチャージ阻止。ガーカンでヘイト管理",
+      "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nナメレス: 大弓でヘイト管理。ガーカンと盾チク刺突回復を使い分ける\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
-        "fulghor"
+        "fulghor",
+        "heolstor",
+        "straghess"
       ],
       "createdAt": "2026-07-04"
     },
@@ -216,20 +203,6 @@
       "createdAt": "2026-08-07"
     },
     {
-      "id": "guardian-heolstor",
-      "characterId": "guardian",
-      "relicImages": [
-        "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
-        "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
-      ],
-      "hpLv15": 1694,
-      "concept": "大弓でヘイト管理。ガーカンと盾チク刺突回復を使い分ける",
-      "bossIds": [
-        "heolstor"
-      ],
-      "createdAt": "2026-07-04"
-    },
-    {
       "id": "guardian-harmonia",
       "characterId": "guardian",
       "relicImages": [
@@ -242,20 +215,6 @@
         "harmonia"
       ],
       "createdAt": "2026-07-24"
-    },
-    {
-      "id": "guardian-straghess",
-      "characterId": "guardian",
-      "relicImages": [
-        "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
-        "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
-      ],
-      "hpLv15": 1694,
-      "concept": "とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
-      "bossIds": [
-        "straghess"
-      ],
-      "createdAt": "2026-07-04"
     },
     {
       "id": "guardian-unknown",
@@ -272,6 +231,21 @@
       "createdAt": "2026-08-07"
     },
     {
+      "id": "ironeye-mukimuki",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-mukimuki_1.png",
+        "assets/relics/ironeye-mukimuki_2.png"
+      ],
+      "hpLv15": 1379,
+      "concept": "ムキムキの目。初期毒抜いて序盤きつい代わりにマリス遺物を使って長期戦ケア",
+      "bossIds": [
+        "gladius",
+        "caligo"
+      ],
+      "createdAt": "2026-08-14"
+    },
+    {
       "id": "ironeye-all",
       "characterId": "ironeye",
       "relicImages": [
@@ -279,7 +253,7 @@
         "assets/relics/ironeye-all_2.png"
       ],
       "hpLv15": 1258,
-      "concept": "初期毒で序盤ケアしたちょっと痩せちゃったムキムキの目",
+      "concept": "ムキムキの目。武器ローグライクしたい",
       "bossIds": [
         "adel",
         "gnoster",
@@ -334,20 +308,6 @@
       "createdAt": "2026-08-16"
     },
     {
-      "id": "hermit-libra",
-      "characterId": "hermit",
-      "relicImages": [
-        "assets/relics/hermit-libra_1.png",
-        "assets/relics/hermit-libra_2.png"
-      ],
-      "hpLv15": "968(1452)",
-      "concept": "リブラの守護者プライドバトルに負けたら出す",
-      "bossIds": [
-        "libra"
-      ],
-      "createdAt": "2026-08-14"
-    },
-    {
       "id": "hermit-general",
       "characterId": "hermit",
       "bossIds": [
@@ -382,6 +342,20 @@
       "hpLv15": "924(1386)",
       "concept": "カーリアいけそうなボス用。深度4野良にはこわくて出せない",
       "createdAt": "2026-08-15"
+    },
+    {
+      "id": "hermit-libra",
+      "characterId": "hermit",
+      "relicImages": [
+        "assets/relics/hermit-libra_1.png",
+        "assets/relics/hermit-libra_2.png"
+      ],
+      "hpLv15": "968(1452)",
+      "concept": "リブラの守護者プライドバトルに負けたら出す",
+      "bossIds": [
+        "libra"
+      ],
+      "createdAt": "2026-08-14"
     },
     {
       "id": "recluse-all",
