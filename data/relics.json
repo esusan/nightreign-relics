@@ -131,18 +131,19 @@
       "createdAt": "2026-08-13"
     },
     {
-      "id": "guardian-gnoster",
+      "id": "guardian-gnoster-unknown",
       "characterId": "guardian",
       "relicImages": [
         "assets/relics/guardian-gnoster-unknown_1.png",
         "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
-      "concept": "基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む",
+      "concept": "グノスター: 基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む\nボス不明: ハルモニアケア",
       "bossIds": [
-        "gnoster"
+        "gnoster",
+        "unknown"
       ],
-      "createdAt": "2026-08-07"
+      "createdAt": "2026-08-15"
     },
     {
       "id": "guardian-maris",
@@ -215,20 +216,6 @@
         "harmonia"
       ],
       "createdAt": "2026-07-24"
-    },
-    {
-      "id": "guardian-unknown",
-      "characterId": "guardian",
-      "relicImages": [
-        "assets/relics/guardian-gnoster-unknown_1.png",
-        "assets/relics/guardian-gnoster-unknown_2.png"
-      ],
-      "hpLv15": 1621,
-      "concept": "ハルモニアケア",
-      "bossIds": [
-        "unknown"
-      ],
-      "createdAt": "2026-08-07"
     },
     {
       "id": "guardian-fukuchan",
