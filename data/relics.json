@@ -231,6 +231,18 @@
       "createdAt": "2026-08-07"
     },
     {
+      "id": "guardian-fukuchan",
+      "characterId": "guardian",
+      "relicImages": [
+        "assets/relics/guardian-fukuchan_1.png",
+        "assets/relics/guardian-fukuchan_2.png"
+      ],
+      "hpLv15": 1452,
+      "concept": "自認復讐者ちゃん",
+      "bossIds": [],
+      "createdAt": "2026-08-16"
+    },
+    {
       "id": "ironeye-mukimuki",
       "characterId": "ironeye",
       "relicImages": [

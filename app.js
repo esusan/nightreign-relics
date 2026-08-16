@@ -214,6 +214,11 @@ async function main() {
       allTag.className = "header-boss-all";
       allTag.textContent = "全ボス共通";
       bosses.appendChild(allTag);
+    } else if (bossIds.length === 0) {
+      const noneTag = document.createElement("span");
+      noneTag.className = "header-boss-all";
+      noneTag.textContent = "ボス指定なし";
+      bosses.appendChild(noneTag);
     } else {
       for (const bossId of bossIds) {
         const bossName = bossMap.get(bossId) ?? bossId;
