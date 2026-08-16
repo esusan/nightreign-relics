@@ -101,15 +101,7 @@
       "concept": "ムキムキの目。武器ローグライクやりたい",
       "bossIds": [
         "gladius",
-        "adel",
-        "gnoster",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
+        "caligo"
       ],
       "createdAt": "2026-08-14"
     },
@@ -287,17 +279,14 @@
         "assets/relics/ironeye-all_2.png"
       ],
       "hpLv15": 1258,
-      "concept": "ムキムキの目。武器ローグライクやりたい",
+      "concept": "初期毒で序盤ケアしたちょっと痩せちゃったムキムキの目",
       "bossIds": [
-        "gladius",
         "adel",
         "gnoster",
         "libra",
         "fulghor",
-        "caligo",
         "heolstor",
         "harmonia",
-        "straghess",
         "unknown"
       ],
       "createdAt": "2026-08-14"
@@ -317,6 +306,20 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "ironeye-libra",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-libra_1.png",
+        "assets/relics/ironeye-libra_2.png"
+      ],
+      "hpLv15": 1258,
+      "concept": "明らかに火力職しかピックされなかった場合はガードヘイトの目にする",
+      "bossIds": [
+        "libra"
+      ],
+      "createdAt": "2026-08-16"
+    },
+    {
       "id": "ironeye-straghess",
       "characterId": "ironeye",
       "relicImages": [
@@ -324,7 +327,7 @@
         "assets/relics/ironeye-straghess_2.png"
       ],
       "hpLv15": 1258,
-      "concept": "ダメージを受けた直後の攻撃でHP回復。ガードカウンター強化と刺突カウンターでも回復",
+      "concept": "刺突回復で最大カット剥がしケア",
       "bossIds": [
         "straghess"
       ],

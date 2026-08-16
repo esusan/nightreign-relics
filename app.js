@@ -9,11 +9,22 @@ async function main() {
   const bossEnMap = new Map(data.bosses.map((b) => [b.id, b.nameEn]));
 
   const characterFilter = document.getElementById("characterFilter");
+  const characterFilterBottom = document.getElementById("characterFilterBottom");
+  const filterContainers = [characterFilter, characterFilterBottom];
+  const bossFilter = document.getElementById("bossFilter");
+  const bossFilterBottom = document.getElementById("bossFilterBottom");
+  const bossFilterContainers = [bossFilter, bossFilterBottom];
   const cardGrid = document.getElementById("cardGrid");
   const emptyState = document.getElementById("emptyState");
   const allBossIds = data.bosses.map((b) => b.id).filter((id) => id !== "unknown");
 
-  let selectedCharacter = "all";
+  const validCharacterIds = new Set(["all", ...data.characters.map((c) => c.id)]);
+  const validBossIds = new Set(["all", ...data.bosses.map((b) => b.id)]);
+  const params = new URLSearchParams(location.search);
+  const paramCharacter = params.get("character");
+  const paramBoss = params.get("boss");
+  let selectedCharacter = validCharacterIds.has(paramCharacter) ? paramCharacter : "all";
+  let selectedBoss = validBossIds.has(paramBoss) ? paramBoss : "all";
 
   loadLastUpdate();
 
@@ -65,26 +76,89 @@ async function main() {
     btn.addEventListener("click", () => {
       selectedCharacter = id;
       updateActiveButton();
+      updateUrl();
       render();
     });
 
     return btn;
   }
 
-  characterFilter.appendChild(buildCharacterButton("all", "すべて", ""));
-  for (const c of data.characters) {
-    characterFilter.appendChild(buildCharacterButton(c.id, c.name, c.icon));
+  for (const container of filterContainers) {
+    container.appendChild(buildCharacterButton("all", "すべて", ""));
+    for (const c of data.characters) {
+      container.appendChild(buildCharacterButton(c.id, c.name, c.icon));
+    }
+  }
+
+  function buildBossButton(id, label, iconSrc) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "character-btn";
+    btn.dataset.bossId = id;
+
+    if (iconSrc) {
+      const icon = document.createElement("img");
+      icon.className = "boss-icon";
+      icon.src = iconSrc;
+      icon.alt = label;
+      btn.appendChild(icon);
+    }
+
+    const name = document.createElement("span");
+    name.className = "character-btn-label";
+    name.textContent = label;
+    btn.appendChild(name);
+
+    btn.addEventListener("click", () => {
+      selectedBoss = id;
+      updateActiveButton();
+      updateUrl();
+      render();
+    });
+
+    return btn;
+  }
+
+  for (const container of bossFilterContainers) {
+    container.appendChild(buildBossButton("all", "すべて", ""));
+    for (const b of data.bosses) {
+      container.appendChild(buildBossButton(b.id, b.name, b.icon));
+    }
+  }
+
+  function updateUrl() {
+    const url = new URL(location.href);
+    if (selectedCharacter === "all") {
+      url.searchParams.delete("character");
+    } else {
+      url.searchParams.set("character", selectedCharacter);
+    }
+    if (selectedBoss === "all") {
+      url.searchParams.delete("boss");
+    } else {
+      url.searchParams.set("boss", selectedBoss);
+    }
+    history.replaceState(null, "", url);
   }
 
   function updateActiveButton() {
-    for (const btn of characterFilter.querySelectorAll(".character-btn")) {
-      btn.classList.toggle("active", btn.dataset.characterId === selectedCharacter);
+    for (const container of filterContainers) {
+      for (const btn of container.querySelectorAll(".character-btn")) {
+        btn.classList.toggle("active", btn.dataset.characterId === selectedCharacter);
+      }
+    }
+    for (const container of bossFilterContainers) {
+      for (const btn of container.querySelectorAll(".character-btn")) {
+        btn.classList.toggle("active", btn.dataset.bossId === selectedBoss);
+      }
     }
   }
 
   function render() {
     const filtered = data.entries.filter((e) => {
-      return selectedCharacter === "all" || e.characterId === selectedCharacter;
+      const characterMatch = selectedCharacter === "all" || e.characterId === selectedCharacter;
+      const bossMatch = selectedBoss === "all" || (e.bossIds ?? []).includes(selectedBoss);
+      return characterMatch && bossMatch;
     });
 
     cardGrid.innerHTML = "";
