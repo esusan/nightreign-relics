@@ -54,6 +54,10 @@ async function main() {
     return iso.replaceAll("-", "/");
   }
 
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   function buildCharacterButton(id, label, iconSrc) {
     const btn = document.createElement("button");
     btn.type = "button";
@@ -78,6 +82,7 @@ async function main() {
       updateActiveButton();
       updateUrl();
       render();
+      scrollToTop();
     });
 
     return btn;
@@ -114,6 +119,7 @@ async function main() {
       updateActiveButton();
       updateUrl();
       render();
+      scrollToTop();
     });
 
     return btn;
