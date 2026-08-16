@@ -286,7 +286,7 @@
         "assets/relics/ironeye-libra_1.png",
         "assets/relics/ironeye-libra_2.png"
       ],
-      "hpLv15": 1258,
+      "hpLv15": 1379,
       "concept": "明らかに火力職しかピックされなかった場合はガードヘイトの目にする",
       "bossIds": [
         "libra"
