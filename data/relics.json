@@ -279,20 +279,6 @@
       "createdAt": "2026-08-14"
     },
     {
-      "id": "ironeye-libra",
-      "characterId": "ironeye",
-      "relicImages": [
-        "assets/relics/ironeye-libra_1.png",
-        "assets/relics/ironeye-libra_2.png"
-      ],
-      "hpLv15": 1379,
-      "concept": "明らかに火力職しかピックされなかった場合はガードヘイトの目にする",
-      "bossIds": [
-        "libra"
-      ],
-      "createdAt": "2026-08-16"
-    },
-    {
       "id": "ironeye-straghess",
       "characterId": "ironeye",
       "relicImages": [
