@@ -230,21 +230,6 @@
       "createdAt": "2026-08-16"
     },
     {
-      "id": "ironeye-mukimuki",
-      "characterId": "ironeye",
-      "relicImages": [
-        "assets/relics/ironeye-mukimuki_1.png",
-        "assets/relics/ironeye-mukimuki_2.png"
-      ],
-      "hpLv15": 1379,
-      "concept": "ムキムキの目。初期毒抜いて序盤きつい代わりにマリス遺物を使って長期戦ケア",
-      "bossIds": [
-        "gladius",
-        "caligo"
-      ],
-      "createdAt": "2026-08-14"
-    },
-    {
       "id": "ironeye-all",
       "characterId": "ironeye",
       "relicImages": [
@@ -261,6 +246,21 @@
         "heolstor",
         "straghess",
         "unknown"
+      ],
+      "createdAt": "2026-08-14"
+    },
+    {
+      "id": "ironeye-mukimuki",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-mukimuki_1.png",
+        "assets/relics/ironeye-mukimuki_2.png"
+      ],
+      "hpLv15": 1379,
+      "concept": "ムキムキの目。初期毒抜いて序盤きつい代わりにマリス遺物を使って長期戦ケア",
+      "bossIds": [
+        "gladius",
+        "caligo"
       ],
       "createdAt": "2026-08-14"
     },
