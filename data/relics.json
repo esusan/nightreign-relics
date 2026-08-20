@@ -244,6 +244,7 @@
         "libra",
         "fulghor",
         "heolstor",
+        "harmonia",
         "straghess",
         "unknown"
       ],
@@ -276,20 +277,6 @@
         "maris"
       ],
       "createdAt": "2026-08-14"
-    },
-    {
-      "id": "ironeye-harmonia",
-      "characterId": "ironeye",
-      "bossIds": [
-        "harmonia"
-      ],
-      "relicImages": [
-        "assets/relics/ironeye-harmonia_1.png",
-        "assets/relics/ironeye-harmonia_2.png"
-      ],
-      "hpLv15": 1185,
-      "concept": "素のステータスだと槍ふらしを武器ガードすると出血するため、出血耐性を確保する構成。",
-      "createdAt": "2026-08-17"
     },
     {
       "id": "hermit-general",
