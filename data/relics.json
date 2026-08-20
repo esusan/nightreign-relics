@@ -343,6 +343,18 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "hermit-gravity",
+      "characterId": "hermit",
+      "bossIds": [],
+      "relicImages": [
+        "assets/relics/hermit-gravity_1.png",
+        "assets/relics/hermit-gravity_2.png"
+      ],
+      "hpLv15": "880(1320)",
+      "concept": "重力隠者",
+      "createdAt": "2026-08-21"
+    },
+    {
       "id": "recluse-all",
       "characterId": "recluse",
       "relicImages": [
