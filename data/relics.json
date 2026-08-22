@@ -296,55 +296,36 @@
     {
       "id": "hermit-general3",
       "characterId": "hermit",
-      "bossIds": [],
+      "bossIds": [
+        "adel",
+        "gnoster",
+        "fulghor",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
       "relicImages": [
         "assets/relics/hermit-general3_1.png",
         "assets/relics/hermit-general3_2.png"
       ],
       "hpLv15": "924(1386)",
-      "concept": "汎用隠者3",
+      "concept": "汎用隠者",
       "createdAt": "2026-08-22"
     },
     {
       "id": "hermit-general2",
       "characterId": "hermit",
-      "bossIds": [],
+      "bossIds": [
+        "gladius"
+      ],
       "relicImages": [
         "assets/relics/hermit-general2_1.png",
         "assets/relics/hermit-general2_2.png"
       ],
       "hpLv15": "968(1452)",
-      "concept": "汎用隠者2",
+      "concept": "ステ変採用隠者",
       "createdAt": "2026-08-22"
-    },
-    {
-      "id": "hermit-general",
-      "characterId": "hermit",
-      "bossIds": [],
-      "relicImages": [
-        "assets/relics/hermit-general_1.png",
-        "assets/relics/hermit-general_2.png"
-      ],
-      "hpLv15": "840(1260)",
-      "concept": "汎用隠者1",
-      "createdAt": "2026-08-15"
-    },
-    {
-      "id": "hermit-caria",
-      "characterId": "hermit",
-      "bossIds": [
-        "gnoster",
-        "fulghor",
-        "harmonia",
-        "straghess"
-      ],
-      "relicImages": [
-        "assets/relics/hermit-caria_1.png",
-        "assets/relics/hermit-caria_2.png"
-      ],
-      "hpLv15": "924(1386)",
-      "concept": "カーリアいけそうなボス用。深度4野良にはこわくて出せない",
-      "createdAt": "2026-08-15"
     },
     {
       "id": "hermit-libra",
@@ -353,24 +334,12 @@
         "assets/relics/hermit-libra_1.png",
         "assets/relics/hermit-libra_2.png"
       ],
-      "hpLv15": "968(1452)",
+      "hpLv15": "880(1320)",
       "concept": "リブラの守護者プライドバトルに負けたら出す",
       "bossIds": [
         "libra"
       ],
       "createdAt": "2026-08-14"
-    },
-    {
-      "id": "hermit-gravity",
-      "characterId": "hermit",
-      "bossIds": [],
-      "relicImages": [
-        "assets/relics/hermit-gravity_1.png",
-        "assets/relics/hermit-gravity_2.png"
-      ],
-      "hpLv15": "880(1320)",
-      "concept": "重力隠者",
-      "createdAt": "2026-08-21"
     },
     {
       "id": "recluse-all",
