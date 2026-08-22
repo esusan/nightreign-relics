@@ -224,7 +224,7 @@
         "assets/relics/guardian-fukuchan_1.png",
         "assets/relics/guardian-fukuchan_2.png"
       ],
-      "hpLv15": 1597,
+      "hpLv15": 1476,
       "concept": "自認復讐者ちゃん",
       "bossIds": [],
       "createdAt": "2026-08-16"
@@ -294,23 +294,39 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "hermit-general3",
+      "characterId": "hermit",
+      "bossIds": [],
+      "relicImages": [
+        "assets/relics/hermit-general3_1.png",
+        "assets/relics/hermit-general3_2.png"
+      ],
+      "hpLv15": "924(1386)",
+      "concept": "汎用隠者3",
+      "createdAt": "2026-08-22"
+    },
+    {
+      "id": "hermit-general2",
+      "characterId": "hermit",
+      "bossIds": [],
+      "relicImages": [
+        "assets/relics/hermit-general2_1.png",
+        "assets/relics/hermit-general2_2.png"
+      ],
+      "hpLv15": "968(1452)",
+      "concept": "汎用隠者2",
+      "createdAt": "2026-08-22"
+    },
+    {
       "id": "hermit-general",
       "characterId": "hermit",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "maris",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "unknown"
-      ],
+      "bossIds": [],
       "relicImages": [
         "assets/relics/hermit-general_1.png",
         "assets/relics/hermit-general_2.png"
       ],
       "hpLv15": "840(1260)",
-      "concept": "深度4野良にはこわくて出せない",
+      "concept": "汎用隠者1",
       "createdAt": "2026-08-15"
     },
     {
@@ -319,6 +335,7 @@
       "bossIds": [
         "gnoster",
         "fulghor",
+        "harmonia",
         "straghess"
       ],
       "relicImages": [
