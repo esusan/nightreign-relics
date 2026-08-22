@@ -163,7 +163,9 @@ async function main() {
   function render() {
     const filtered = data.entries.filter((e) => {
       const characterMatch = selectedCharacter === "all" || e.characterId === selectedCharacter;
-      const bossMatch = selectedBoss === "all" || (e.bossIds ?? []).includes(selectedBoss);
+      const entryBossIds = e.bossIds ?? [];
+      const bossMatch =
+        selectedBoss === "all" || entryBossIds.length === 0 || entryBossIds.includes(selectedBoss);
       return characterMatch && bossMatch;
     });
 
