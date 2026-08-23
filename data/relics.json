@@ -314,6 +314,30 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "hermit-general5",
+      "characterId": "hermit",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-general5_1.png",
+        "assets/relics/hermit-general5_2.png"
+      ],
+      "hpLv15": "960(1440)",
+      "concept": "スキル出血抜きの堅実構成",
+      "createdAt": "2026-08-23"
+    },
+    {
       "id": "hermit-general4",
       "characterId": "hermit",
       "bossIds": [
