@@ -16,7 +16,7 @@ async function main() {
   const bossFilterContainers = [bossFilter, bossFilterBottom];
   const cardGrid = document.getElementById("cardGrid");
   const emptyState = document.getElementById("emptyState");
-  const allBossIds = data.bosses.map((b) => b.id).filter((id) => id !== "unknown");
+  const allBossIds = data.bosses.map((b) => b.id).filter((id) => id !== "unknown" && id !== "play");
 
   const validCharacterIds = new Set(["all", ...data.characters.map((c) => c.id)]);
   const validBossIds = new Set(["all", ...data.bosses.map((b) => b.id)]);
@@ -211,11 +211,18 @@ async function main() {
     bosses.className = "header-bosses";
     bosses.classList.toggle("single", bossIds.length === 1);
 
+    const isPlayOnly = bossIds.length === 1 && bossIds[0] === "play";
+
     if (isAllBosses) {
       const allTag = document.createElement("span");
       allTag.className = "header-boss-all";
       allTag.textContent = "全ボス共通";
       bosses.appendChild(allTag);
+    } else if (isPlayOnly) {
+      const playTag = document.createElement("span");
+      playTag.className = "header-boss-all";
+      playTag.textContent = bossMap.get("play") ?? "遊び用";
+      bosses.appendChild(playTag);
     } else if (bossIds.length === 0) {
       const noneTag = document.createElement("span");
       noneTag.className = "header-boss-all";

@@ -87,6 +87,11 @@
       "name": "ボス不明",
       "icon": "assets/bosses/unknown.png",
       "nameEn": ""
+    },
+    {
+      "id": "play",
+      "name": "遊び用",
+      "icon": ""
     }
   ],
   "entries": [
@@ -181,10 +186,9 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
-      "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nナメレス: 大弓でヘイト管理。ガーカンと盾チク刺突回復を使い分ける\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
+      "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
         "fulghor",
-        "heolstor",
         "straghess"
       ],
       "createdAt": "2026-07-04"
@@ -202,6 +206,20 @@
         "caligo"
       ],
       "createdAt": "2026-08-07"
+    },
+    {
+      "id": "guardian-heolstor",
+      "characterId": "guardian",
+      "bossIds": [
+        "heolstor"
+      ],
+      "relicImages": [
+        "assets/relics/guardian-heolstor_1.png",
+        "assets/relics/guardian-heolstor_2.png"
+      ],
+      "hpLv15": 1694,
+      "concept": "深度4圧倒的ダブルドーナツ率に対応するためにガードアーツを2積み",
+      "createdAt": "2026-08-23"
     },
     {
       "id": "guardian-harmonia",
@@ -226,7 +244,9 @@
       ],
       "hpLv15": 1476,
       "concept": "自認復讐者ちゃん",
-      "bossIds": [],
+      "bossIds": [
+        "play"
+      ],
       "createdAt": "2026-08-16"
     },
     {
