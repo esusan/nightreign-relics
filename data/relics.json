@@ -259,45 +259,18 @@
       "hpLv15": 1258,
       "concept": "ムキムキの目。武器ローグライクしたい",
       "bossIds": [
+        "gladius",
         "adel",
         "gnoster",
         "libra",
         "fulghor",
+        "caligo",
         "heolstor",
         "harmonia",
         "straghess",
         "unknown"
       ],
       "createdAt": "2026-08-14"
-    },
-    {
-      "id": "ironeye-mukimuki",
-      "characterId": "ironeye",
-      "relicImages": [
-        "assets/relics/ironeye-mukimuki_1.png",
-        "assets/relics/ironeye-mukimuki_2.png"
-      ],
-      "hpLv15": 1379,
-      "concept": "ムキムキの目。初期毒抜いて序盤きつい代わりにマリス遺物を使って長期戦ケア&削りの回復手段確保",
-      "bossIds": [
-        "gladius",
-        "caligo"
-      ],
-      "createdAt": "2026-08-14"
-    },
-    {
-      "id": "ironeye-gladius",
-      "characterId": "ironeye",
-      "relicImages": [
-        "assets/relics/ironeye-gladius_1.png",
-        "assets/relics/ironeye-gladius_2.png"
-      ],
-      "hpLv15": 1224,
-      "concept": "素の炎カット0%をカバーしたい",
-      "bossIds": [
-        "gladius"
-      ],
-      "createdAt": "2026-08-21"
     },
     {
       "id": "ironeye-maris",
