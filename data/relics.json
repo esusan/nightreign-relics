@@ -321,7 +321,6 @@
         "adel",
         "gnoster",
         "maris",
-        "libra",
         "fulghor",
         "caligo",
         "heolstor",
@@ -333,9 +332,23 @@
         "assets/relics/hermit-general5_1.png",
         "assets/relics/hermit-general5_2.png"
       ],
-      "hpLv15": "960(1440)",
+      "hpLv15": "1012(1518)",
       "concept": "スキル出血抜きの堅実構成",
-      "createdAt": "2026-08-23"
+      "createdAt": "2026-08-24"
+    },
+    {
+      "id": "hermit-libra",
+      "characterId": "hermit",
+      "relicImages": [
+        "assets/relics/hermit-libra_1.png",
+        "assets/relics/hermit-libra_2.png"
+      ],
+      "hpLv15": "920(1380)",
+      "concept": "発狂耐性入れる",
+      "bossIds": [
+        "libra"
+      ],
+      "createdAt": "2026-08-24"
     },
     {
       "id": "hermit-general4",
@@ -358,56 +371,8 @@
         "assets/relics/hermit-general4_2.png"
       ],
       "hpLv15": "920(1380)",
-      "concept": "汎用隠者NEW",
-      "createdAt": "2026-08-22"
-    },
-    {
-      "id": "hermit-general3",
-      "characterId": "hermit",
-      "bossIds": [
-        "adel",
-        "gnoster",
-        "fulghor",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "relicImages": [
-        "assets/relics/hermit-general3_1.png",
-        "assets/relics/hermit-general3_2.png"
-      ],
-      "hpLv15": "924(1386)",
-      "concept": "汎用隠者",
-      "createdAt": "2026-08-22"
-    },
-    {
-      "id": "hermit-general2",
-      "characterId": "hermit",
-      "bossIds": [
-        "gladius"
-      ],
-      "relicImages": [
-        "assets/relics/hermit-general2_1.png",
-        "assets/relics/hermit-general2_2.png"
-      ],
-      "hpLv15": "968(1452)",
-      "concept": "ステ変採用隠者",
-      "createdAt": "2026-08-22"
-    },
-    {
-      "id": "hermit-libra",
-      "characterId": "hermit",
-      "relicImages": [
-        "assets/relics/hermit-libra_1.png",
-        "assets/relics/hermit-libra_2.png"
-      ],
-      "hpLv15": "880(1320)",
-      "concept": "リブラの守護者プライドバトルに負けたら出す",
-      "bossIds": [
-        "libra"
-      ],
-      "createdAt": "2026-08-14"
+      "concept": "アーツ出血採用隠者",
+      "createdAt": "2026-08-24"
     },
     {
       "id": "recluse-all",
