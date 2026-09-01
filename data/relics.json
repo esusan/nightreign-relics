@@ -346,6 +346,30 @@
       "createdAt": "2026-08-24"
     },
     {
+      "id": "recluse-skillpractice",
+      "characterId": "recluse",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "relicImages": [
+        "assets/relics/recluse-skillpractice_1.png",
+        "assets/relics/recluse-skillpractice_2.png"
+      ],
+      "hpLv15": 1355,
+      "concept": "戦技練習用",
+      "createdAt": "2026-09-02"
+    },
+    {
       "id": "recluse-all",
       "characterId": "recluse",
       "relicImages": [
@@ -353,11 +377,15 @@
         "assets/relics/recluse-all_2.png"
       ],
       "hpLv15": 1476,
-      "concept": "大剣二刀バッタが強すぎる。武器ローグライクしにくい。全部これでいいじゃん",
+      "concept": "もりもりHP",
       "bossIds": [
+        "gladius",
         "adel",
         "gnoster",
+        "maris",
+        "libra",
         "fulghor",
+        "caligo",
         "heolstor",
         "harmonia",
         "straghess",
@@ -376,7 +404,7 @@
         "assets/relics/recluse-caligo_2.png"
       ],
       "hpLv15": 1355,
-      "concept": "何も考えることがない",
+      "concept": "大剣追撃二刀バッタするだけ",
       "createdAt": "2026-09-01"
     }
   ]
