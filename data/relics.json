@@ -11,14 +11,14 @@
       "icon": "assets/characters/ironeye.png"
     },
     {
-      "id": "hermit",
-      "name": "隠者",
-      "icon": "assets/characters/hermit.png"
-    },
-    {
       "id": "recluse",
       "name": "追跡者",
       "icon": "assets/characters/recluse.png"
+    },
+    {
+      "id": "hermit",
+      "name": "隠者",
+      "icon": "assets/characters/hermit.png"
     }
   ],
   "bosses": [
