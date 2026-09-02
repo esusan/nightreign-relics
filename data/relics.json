@@ -322,30 +322,6 @@
       "createdAt": "2026-08-24"
     },
     {
-      "id": "hermit-general4",
-      "characterId": "hermit",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "relicImages": [
-        "assets/relics/hermit-general4_1.png",
-        "assets/relics/hermit-general4_2.png"
-      ],
-      "hpLv15": "920(1380)",
-      "concept": "アーツ出血採用隠者",
-      "createdAt": "2026-08-24"
-    },
-    {
       "id": "recluse-skillpractice",
       "characterId": "recluse",
       "bossIds": [
