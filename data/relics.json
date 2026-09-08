@@ -176,7 +176,7 @@
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-07-25"
+      "createdAt": "2026-09-08"
     },
     {
       "id": "guardian-fulghor-heolstor-straghess",
@@ -185,13 +185,13 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_1.png",
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
-      "hpLv15": 1694,
+      "hpLv15": 1621,
       "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
         "fulghor",
         "straghess"
       ],
-      "createdAt": "2026-07-04"
+      "createdAt": "2026-09-08"
     },
     {
       "id": "guardian-caligo",
@@ -205,7 +205,7 @@
       "bossIds": [
         "caligo"
       ],
-      "createdAt": "2026-08-07"
+      "createdAt": "2026-09-08"
     },
     {
       "id": "guardian-heolstor",
@@ -217,9 +217,9 @@
         "assets/relics/guardian-heolstor_1.png",
         "assets/relics/guardian-heolstor_2.png"
       ],
-      "hpLv15": 1694,
+      "hpLv15": 1621,
       "concept": "深度4圧倒的ダブルドーナツ率に対応するためにガードアーツを2積み",
-      "createdAt": "2026-08-23"
+      "createdAt": "2026-09-08"
     },
     {
       "id": "guardian-harmonia",
