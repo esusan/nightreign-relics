@@ -279,12 +279,12 @@
         "assets/relics/ironeye-maris_1.png",
         "assets/relics/ironeye-maris_2.png"
       ],
-      "hpLv15": 1254,
+      "hpLv15": 1144,
       "concept": "さすがに睡眠耐性積ませてください",
       "bossIds": [
         "maris"
       ],
-      "createdAt": "2026-08-14"
+      "createdAt": "2026-09-08"
     },
     {
       "id": "hermit-general5",
