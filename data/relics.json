@@ -19,6 +19,11 @@
       "id": "hermit",
       "name": "隠者",
       "icon": "assets/characters/hermit.png"
+    },
+    {
+      "id": "undertaker",
+      "name": "葬儀屋",
+      "icon": "assets/characters/undertaker.png"
     }
   ],
   "bosses": [
@@ -273,6 +278,20 @@
       "createdAt": "2026-08-14"
     },
     {
+      "id": "ironeye-gladius",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-gladius_1.png",
+        "assets/relics/ironeye-gladius_2.png"
+      ],
+      "hpLv15": 1258,
+      "concept": "炎カットと物理カットを厚めにする",
+      "bossIds": [
+        "gladius"
+      ],
+      "createdAt": "2026-09-13"
+    },
+    {
       "id": "ironeye-maris",
       "characterId": "ironeye",
       "relicImages": [
@@ -285,6 +304,20 @@
         "maris"
       ],
       "createdAt": "2026-09-08"
+    },
+    {
+      "id": "ironeye-libra",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-libra_1.png",
+        "assets/relics/ironeye-libra_2.png"
+      ],
+      "hpLv15": 940,
+      "concept": "作ってみた1段",
+      "bossIds": [
+        "libra"
+      ],
+      "createdAt": "2026-09-13"
     },
     {
       "id": "hermit-general5",
@@ -382,6 +415,30 @@
       "hpLv15": 1355,
       "concept": "大剣追撃二刀バッタするだけ",
       "createdAt": "2026-09-01"
+    },
+    {
+      "id": "undertaker-all",
+      "characterId": "undertaker",
+      "relicImages": [
+        "assets/relics/undertaker-all_1.png",
+        "assets/relics/undertaker-all_2.png"
+      ],
+      "hpLv15": 1258,
+      "concept": "葬儀屋使ってみたい",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-09-13"
     }
   ]
 }
