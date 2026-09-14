@@ -4,9 +4,11 @@ async function main() {
 
   const characterMap = new Map(data.characters.map((c) => [c.id, c.name]));
   const characterIconMap = new Map(data.characters.map((c) => [c.id, c.icon]));
+  const characterOrderMap = new Map(data.characters.map((c, i) => [c.id, i]));
   const bossMap = new Map(data.bosses.map((b) => [b.id, b.name]));
   const bossIconMap = new Map(data.bosses.map((b) => [b.id, b.icon]));
   const bossEnMap = new Map(data.bosses.map((b) => [b.id, b.nameEn]));
+  const bossOrderMap = new Map(data.bosses.map((b, i) => [b.id, i]));
 
   const characterFilter = document.getElementById("characterFilter");
   const characterFilterBottom = document.getElementById("characterFilterBottom");
@@ -14,17 +16,21 @@ async function main() {
   const bossFilter = document.getElementById("bossFilter");
   const bossFilterBottom = document.getElementById("bossFilterBottom");
   const bossFilterContainers = [bossFilter, bossFilterBottom];
+  const sortFilter = document.getElementById("sortFilter");
   const cardGrid = document.getElementById("cardGrid");
   const emptyState = document.getElementById("emptyState");
   const allBossIds = data.bosses.map((b) => b.id).filter((id) => id !== "unknown" && id !== "play");
 
   const validCharacterIds = new Set(["all", ...data.characters.map((c) => c.id)]);
   const validBossIds = new Set(["all", ...data.bosses.map((b) => b.id)]);
+  const validSortIds = new Set(["default", "new", "old"]);
   const params = new URLSearchParams(location.search);
   const paramCharacter = params.get("character");
   const paramBoss = params.get("boss");
+  const paramSort = params.get("sort");
   let selectedCharacter = validCharacterIds.has(paramCharacter) ? paramCharacter : "all";
   let selectedBoss = validBossIds.has(paramBoss) ? paramBoss : "all";
+  let selectedSort = validSortIds.has(paramSort) ? paramSort : "default";
 
   loadLastUpdate();
 
@@ -132,6 +138,32 @@ async function main() {
     }
   }
 
+  function buildSortButton(id, label) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "character-btn";
+    btn.dataset.sortId = id;
+
+    const name = document.createElement("span");
+    name.className = "character-btn-label";
+    name.textContent = label;
+    btn.appendChild(name);
+
+    btn.addEventListener("click", () => {
+      selectedSort = id;
+      updateActiveButton();
+      updateUrl();
+      render();
+      scrollToTop();
+    });
+
+    return btn;
+  }
+
+  sortFilter.appendChild(buildSortButton("default", "ボス順"));
+  sortFilter.appendChild(buildSortButton("new", "更新日が新しい順"));
+  sortFilter.appendChild(buildSortButton("old", "更新日が古い順"));
+
   function updateUrl() {
     const url = new URL(location.href);
     if (selectedCharacter === "all") {
@@ -143,6 +175,11 @@ async function main() {
       url.searchParams.delete("boss");
     } else {
       url.searchParams.set("boss", selectedBoss);
+    }
+    if (selectedSort === "default") {
+      url.searchParams.delete("sort");
+    } else {
+      url.searchParams.set("sort", selectedSort);
     }
     history.replaceState(null, "", url);
   }
@@ -158,6 +195,9 @@ async function main() {
         btn.classList.toggle("active", btn.dataset.bossId === selectedBoss);
       }
     }
+    for (const btn of sortFilter.querySelectorAll(".character-btn")) {
+      btn.classList.toggle("active", btn.dataset.sortId === selectedSort);
+    }
   }
 
   function render() {
@@ -168,6 +208,20 @@ async function main() {
         selectedBoss === "all" || entryBossIds.length === 0 || entryBossIds.includes(selectedBoss);
       return characterMatch && bossMatch;
     });
+
+    if (selectedSort === "new") {
+      filtered.sort((a, b) => (b.createdAt ?? "").localeCompare(a.createdAt ?? ""));
+    } else if (selectedSort === "old") {
+      filtered.sort((a, b) => (a.createdAt ?? "").localeCompare(b.createdAt ?? ""));
+    } else {
+      filtered.sort((a, b) => {
+        const charDiff = (characterOrderMap.get(a.characterId) ?? 0) - (characterOrderMap.get(b.characterId) ?? 0);
+        if (charDiff !== 0) return charDiff;
+        const bossDiff =
+          (bossOrderMap.get((a.bossIds ?? [])[0]) ?? 0) - (bossOrderMap.get((b.bossIds ?? [])[0]) ?? 0);
+        return bossDiff;
+      });
+    }
 
     cardGrid.innerHTML = "";
     emptyState.hidden = filtered.length > 0;

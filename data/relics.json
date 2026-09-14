@@ -347,12 +347,12 @@
         "assets/relics/hermit-libra_1.png",
         "assets/relics/hermit-libra_2.png"
       ],
-      "hpLv15": "920(1380)",
+      "hpLv15": "980(1470)",
       "concept": "発狂耐性入れる",
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-08-24"
+      "createdAt": "2026-09-14"
     },
     {
       "id": "recluse-skillpractice",

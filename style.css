@@ -157,6 +157,16 @@ body {
   object-fit: contain;
 }
 
+.sort-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
