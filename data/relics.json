@@ -205,12 +205,12 @@
         "assets/relics/guardian-caligo_1.png",
         "assets/relics/guardian-caligo_2.png"
       ],
-      "hpLv15": 1584,
-      "concept": "大技をアーツキャンセルする。炎か体勢崩しでダウンを狙う。左手にメイン武器・右手に回避戦技",
+      "hpLv15": 1562,
+      "concept": "アーツを溜めて常夜カリゴの大技をキャンセルする。左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "caligo"
       ],
-      "createdAt": "2026-09-08"
+      "createdAt": "2026-09-15"
     },
     {
       "id": "guardian-heolstor",
@@ -417,6 +417,30 @@
       "createdAt": "2026-09-01"
     },
     {
+      "id": "undertaker-all-hp",
+      "characterId": "undertaker",
+      "relicImages": [
+        "assets/relics/undertaker-all-hp_1.png",
+        "assets/relics/undertaker-all-hp_2.png"
+      ],
+      "hpLv15": 1379,
+      "concept": "HP重視",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-09-15"
+    },
+    {
       "id": "undertaker-all",
       "characterId": "undertaker",
       "relicImages": [
@@ -424,7 +448,7 @@
         "assets/relics/undertaker-all_2.png"
       ],
       "hpLv15": 1258,
-      "concept": "葬儀屋使ってみたい",
+      "concept": "敵倒アーツ重視",
       "bossIds": [
         "gladius",
         "adel",
