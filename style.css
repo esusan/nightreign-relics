@@ -194,7 +194,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--accent);
   white-space: nowrap;
@@ -315,6 +315,7 @@ body {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .stat-date {
@@ -330,6 +331,23 @@ body {
   font-size: 1.15rem;
   font-weight: bold;
   color: var(--text);
+}
+
+.hp-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  background: #3c0808;
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+}
+
+.hp-badge .stat-label-hp {
+  color: #f0d5d5;
+}
+
+.hp-badge .stat-value-hp {
+  color: #ffffff;
 }
 
 .divider {
