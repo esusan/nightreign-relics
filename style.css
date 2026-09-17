@@ -24,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  font-family: "LINE Seed JP", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   padding: 0 1rem 3rem;
@@ -339,7 +339,7 @@ body {
 }
 
 .concept {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5;
   white-space: pre-line;
 }
