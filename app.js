@@ -368,14 +368,17 @@ async function main() {
 
     const stat = document.createElement("div");
     stat.className = "stat-row";
+    const hpBadge = document.createElement("span");
+    hpBadge.className = "hp-badge";
     const statLabel = document.createElement("span");
-    statLabel.className = "stat-label";
+    statLabel.className = "stat-label stat-label-hp";
     statLabel.textContent = "Lv15 HP";
     const statValue = document.createElement("span");
-    statValue.className = "stat-value";
+    statValue.className = "stat-value stat-value-hp";
     statValue.textContent = entry.hpLv15 ?? "未登録";
-    stat.appendChild(statLabel);
-    stat.appendChild(statValue);
+    hpBadge.appendChild(statLabel);
+    hpBadge.appendChild(statValue);
+    stat.appendChild(hpBadge);
 
     if (entry.createdAt) {
       const dateLabel = document.createElement("span");
