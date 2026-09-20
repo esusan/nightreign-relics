@@ -133,12 +133,12 @@
         "assets/relics/guardian-adel_1.png",
         "assets/relics/guardian-adel_2.png"
       ],
-      "hpLv15": 1540,
+      "hpLv15": 1628,
       "concept": "竜巻スタジアムをアーツキャンセルする。大弓でタゲ取って掴みからアーツ回収。刺剣で状態異常を狙う。エンチャ後は左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "adel"
       ],
-      "createdAt": "2026-08-13"
+      "createdAt": "2026-09-21"
     },
     {
       "id": "guardian-gnoster-unknown",
