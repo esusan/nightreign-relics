@@ -367,6 +367,20 @@
       "createdAt": "2026-09-14"
     },
     {
+      "id": "hermit-maris",
+      "characterId": "hermit",
+      "bossIds": [
+        "maris"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-maris_1.png",
+        "assets/relics/hermit-maris_2.png"
+      ],
+      "hpLv15": "990(1485)",
+      "concept": "ストームルーラーの火力に寄せる",
+      "createdAt": "2026-09-21"
+    },
+    {
       "id": "hermit-libra",
       "characterId": "hermit",
       "relicImages": [
@@ -379,6 +393,20 @@
         "libra"
       ],
       "createdAt": "2026-09-14"
+    },
+    {
+      "id": "hermit-caligo",
+      "characterId": "hermit",
+      "bossIds": [
+        "caligo"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-caligo_1.png",
+        "assets/relics/hermit-caligo_2.png"
+      ],
+      "hpLv15": "1016(1524)",
+      "concept": "巨人の火狙いだけど属性攻撃力に寄せているので序盤魔術も狂い火もいける",
+      "createdAt": "2026-09-21"
     },
     {
       "id": "recluse-skillpractice",
