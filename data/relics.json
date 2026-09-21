@@ -141,19 +141,36 @@
       "createdAt": "2026-09-21"
     },
     {
+      "id": "guardian-gnoster-taikyu",
+      "characterId": "guardian",
+      "variant": "耐久特化",
+      "relicImages": [
+        "assets/relics/guardian-gnoster-taikyu_1.png",
+        "assets/relics/guardian-gnoster-taikyu_2.png"
+      ],
+      "hpLv15": 1742,
+      "concept": "大弓でグノスター担当。カット付帯を厚めにする",
+      "bossIds": [
+        "gnoster",
+        "unknown"
+      ],
+      "createdAt": "2026-09-21"
+    },
+    {
       "id": "guardian-gnoster-unknown",
       "characterId": "guardian",
+      "variant": "アロレ大弓想定",
       "relicImages": [
         "assets/relics/guardian-gnoster-unknown_1.png",
         "assets/relics/guardian-gnoster-unknown_2.png"
       ],
       "hpLv15": 1621,
-      "concept": "グノスター: 基本は大弓でグノ担当。明らかにグノ担当がいる場合はガーカン付帯を積む\nボス不明: ハルモニアケア",
+      "concept": "フォルティスを削れるようにしておく。状態異常武器も確保しておく",
       "bossIds": [
         "gnoster",
         "unknown"
       ],
-      "createdAt": "2026-08-15"
+      "createdAt": "2026-09-21"
     },
     {
       "id": "guardian-maris",
