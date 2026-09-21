@@ -28,18 +28,18 @@
 
 同じ遺物構成を複数ボスで使い回す場合、コンセプト文もまとめて共有できるなら `bossIds` に複数指定して1エントリにする。ボスごとにコンセプト文が異なる場合は、エントリはボスごとに分けたまま `relicImages` にだけ同じファイルパスを指定する（画像だけ使い回す）。
 
-同じボスに対して複数の遺物構成パターン（耐久型・鎌型など）を1枚のカードで見せたい場合は、`relicImages` の代わりに `variantGroups` を使う。
+同じボスに対して複数の遺物構成パターン（パターンA・Bなど）を1枚のカードで見せたい場合は、`relicImages` の代わりに `variantGroups` を使う。
 
 ```json
 {
-  "id": "guardian-gladius",
+  "id": "guardian-example",
   "characterId": "guardian",
   "bossIds": ["gladius"],
-  "hpLv15": 1742,
+  "hpLv15": 1500,
   "concept": "コンセプト文言",
   "variantGroups": [
-    { "label": "耐久特化", "images": ["assets/relics/guardian-gladius-taikyu_1.png", "assets/relics/guardian-gladius-taikyu_2.png"] },
-    { "label": "鎌見つけやすく", "images": ["assets/relics/guardian-gladius-kama_1.png", "assets/relics/guardian-gladius-kama_2.png"] }
+    { "label": "パターンA", "images": ["assets/relics/guardian-example-a_1.png", "assets/relics/guardian-example-a_2.png"] },
+    { "label": "パターンB", "images": ["assets/relics/guardian-example-b_1.png", "assets/relics/guardian-example-b_2.png"] }
   ]
 }
 ```

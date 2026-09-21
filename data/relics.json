@@ -106,25 +106,13 @@
       "bossIds": [
         "gladius"
       ],
-      "hpLv15": 1742,
-      "concept": "大弓でヘイト管理し、味方が中距離攻撃を打ちやすくする。サイス振りそうなキャラピックだったら鎌見つけやすくを採用する",
-      "variantGroups": [
-        {
-          "label": "耐久特化",
-          "images": [
-            "assets/relics/guardian-gladius-taikyu_1.png",
-            "assets/relics/guardian-gladius-taikyu_2.png"
-          ]
-        },
-        {
-          "label": "鎌見つけやすく",
-          "images": [
-            "assets/relics/guardian-gladius-kama_1.png",
-            "assets/relics/guardian-gladius-kama_2.png"
-          ]
-        }
+      "relicImages": [
+        "assets/relics/guardian-gladius_1.png",
+        "assets/relics/guardian-gladius_2.png"
       ],
-      "createdAt": "2026-07-25"
+      "hpLv15": 1650,
+      "concept": "95%ラススタを想定してクロスボウ見つけやすくする",
+      "createdAt": "2026-09-21"
     },
     {
       "id": "guardian-adel",
