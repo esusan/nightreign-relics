@@ -141,34 +141,29 @@
       "createdAt": "2026-09-21"
     },
     {
-      "id": "guardian-gnoster-taikyu",
+      "id": "guardian-gnoster",
       "characterId": "guardian",
-      "variant": "耐久特化",
-      "relicImages": [
-        "assets/relics/guardian-gnoster-taikyu_1.png",
-        "assets/relics/guardian-gnoster-taikyu_2.png"
-      ],
-      "hpLv15": 1742,
-      "concept": "大弓でグノスター担当。カット付帯を厚めにする",
       "bossIds": [
-        "gnoster",
-        "unknown"
+        "gnoster"
       ],
-      "createdAt": "2026-09-21"
-    },
-    {
-      "id": "guardian-gnoster-unknown",
-      "characterId": "guardian",
-      "variant": "アロレ大弓想定",
-      "relicImages": [
-        "assets/relics/guardian-gnoster-unknown_1.png",
-        "assets/relics/guardian-gnoster-unknown_2.png"
-      ],
-      "hpLv15": 1621,
-      "concept": "フォルティスを削れるようにしておく。状態異常武器も確保しておく",
-      "bossIds": [
-        "gnoster",
-        "unknown"
+      "concept": "耐久特化: 大弓でグノスター担当。カット付帯を厚めにする\n戦技寄せ: フォルティスを削れるようにしておく。状態異常武器も確保しておく",
+      "variantGroups": [
+        {
+          "label": "耐久特化",
+          "hpLv15": 1742,
+          "images": [
+            "assets/relics/guardian-gnoster-taikyu_1.png",
+            "assets/relics/guardian-gnoster-taikyu_2.png"
+          ]
+        },
+        {
+          "label": "戦技寄せ",
+          "hpLv15": 1621,
+          "images": [
+            "assets/relics/guardian-gnoster-senki_1.png",
+            "assets/relics/guardian-gnoster-senki_2.png"
+          ]
+        }
       ],
       "createdAt": "2026-09-21"
     },
@@ -255,7 +250,21 @@
       "bossIds": [
         "harmonia"
       ],
-      "createdAt": "2026-07-24"
+      "createdAt": "2026-09-21"
+    },
+    {
+      "id": "guardian-unknown",
+      "characterId": "guardian",
+      "relicImages": [
+        "assets/relics/guardian-unknown_1.png",
+        "assets/relics/guardian-unknown_2.png"
+      ],
+      "hpLv15": 1621,
+      "concept": "汎用+夜侵入",
+      "bossIds": [
+        "unknown"
+      ],
+      "createdAt": "2026-09-21"
     },
     {
       "id": "guardian-fukuchan",

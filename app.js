@@ -338,7 +338,22 @@ async function main() {
       return row;
     }
 
+    function buildHpBadge(value) {
+      const hpBadge = document.createElement("span");
+      hpBadge.className = "hp-badge";
+      const statLabel = document.createElement("span");
+      statLabel.className = "stat-label stat-label-hp";
+      statLabel.textContent = "Lv15 HP";
+      const statValue = document.createElement("span");
+      statValue.className = "stat-value stat-value-hp";
+      statValue.textContent = value ?? "未登録";
+      hpBadge.appendChild(statLabel);
+      hpBadge.appendChild(statValue);
+      return hpBadge;
+    }
+
     const bossLabel = bossNames.join("・");
+    const hasGroupHp = (entry.variantGroups ?? []).some((g) => g.hpLv15 != null);
 
     if (entry.variantGroups) {
       for (const group of entry.variantGroups) {
@@ -353,6 +368,12 @@ async function main() {
         block.appendChild(label);
 
         block.appendChild(buildRelicRow(group.images ?? [], `${bossLabel}(${group.label})`));
+        if (group.hpLv15 != null) {
+          const hpRow = document.createElement("div");
+          hpRow.className = "relic-block-hp";
+          hpRow.appendChild(buildHpBadge(group.hpLv15));
+          block.appendChild(hpRow);
+        }
         card.appendChild(block);
       }
     } else {
@@ -368,17 +389,7 @@ async function main() {
 
     const stat = document.createElement("div");
     stat.className = "stat-row";
-    const hpBadge = document.createElement("span");
-    hpBadge.className = "hp-badge";
-    const statLabel = document.createElement("span");
-    statLabel.className = "stat-label stat-label-hp";
-    statLabel.textContent = "Lv15 HP";
-    const statValue = document.createElement("span");
-    statValue.className = "stat-value stat-value-hp";
-    statValue.textContent = entry.hpLv15 ?? "未登録";
-    hpBadge.appendChild(statLabel);
-    hpBadge.appendChild(statValue);
-    stat.appendChild(hpBadge);
+    if (!hasGroupHp) stat.appendChild(buildHpBadge(entry.hpLv15));
 
     if (entry.createdAt) {
       const dateLabel = document.createElement("span");

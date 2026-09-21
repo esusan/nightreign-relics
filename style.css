@@ -261,12 +261,16 @@ body {
 }
 
 .relic-block + .relic-block {
+  margin-top: 1rem;
+}
+
+.relic-block-hp {
   margin-top: 0.4rem;
 }
 
 .relic-block-label {
   position: absolute;
-  top: -0.35rem;
+  top: -0.15rem;
   left: 0.7rem;
   font-size: 0.7rem;
   font-weight: bold;
