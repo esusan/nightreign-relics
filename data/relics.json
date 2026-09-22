@@ -269,6 +269,20 @@
       "createdAt": "2026-08-16"
     },
     {
+      "id": "guardian-mazyutsu",
+      "characterId": "guardian",
+      "relicImages": [
+        "assets/relics/guardian-mazyutsu_1.png",
+        "assets/relics/guardian-mazyutsu_2.png"
+      ],
+      "hpLv15": 1320,
+      "concept": "自認隠者",
+      "bossIds": [
+        "play"
+      ],
+      "createdAt": "2026-09-22"
+    },
+    {
       "id": "ironeye-all",
       "characterId": "ironeye",
       "relicImages": [
@@ -332,6 +346,20 @@
         "libra"
       ],
       "createdAt": "2026-09-13"
+    },
+    {
+      "id": "ironeye-rune",
+      "characterId": "ironeye",
+      "relicImages": [
+        "assets/relics/ironeye-rune_1.png",
+        "assets/relics/ironeye-rune_2.png"
+      ],
+      "hpLv15": 1040,
+      "concept": "取得ルーン増加4積み",
+      "bossIds": [
+        "play"
+      ],
+      "createdAt": "2026-09-22"
     },
     {
       "id": "hermit-general5",
