@@ -354,8 +354,8 @@
         "assets/relics/ironeye-rune_1.png",
         "assets/relics/ironeye-rune_2.png"
       ],
-      "hpLv15": 1040,
-      "concept": "取得ルーン増加4積み",
+      "hpLv15": 992,
+      "concept": "取得ルーン増加3積み",
       "bossIds": [
         "play"
       ],
