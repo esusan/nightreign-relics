@@ -393,8 +393,8 @@
         "assets/relics/hermit-maris_2.png"
       ],
       "hpLv15": "990(1485)",
-      "concept": "ストームルーラーの火力に寄せる",
-      "createdAt": "2026-09-21"
+      "concept": "魔術強化はストームルーラーに乗らないので魔力攻撃力に変更。睡眠耐性+1も入れる",
+      "createdAt": "2026-09-23"
     },
     {
       "id": "hermit-libra",
