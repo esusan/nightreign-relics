@@ -24,6 +24,11 @@
       "id": "undertaker",
       "name": "葬儀屋",
       "icon": "assets/characters/undertaker.png"
+    },
+    {
+      "id": "raider",
+      "name": "無頼漢",
+      "icon": "assets/characters/raider.png"
     }
   ],
   "bosses": [
@@ -533,6 +538,30 @@
         "unknown"
       ],
       "createdAt": "2026-09-13"
+    },
+    {
+      "id": "raider-all",
+      "characterId": "raider",
+      "relicImages": [
+        "assets/relics/raider-all_1.png",
+        "assets/relics/raider-all_2.png"
+      ],
+      "hpLv15": 1524,
+      "concept": "スキル命中時入らない",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-09-26"
     }
   ]
 }
