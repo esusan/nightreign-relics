@@ -376,8 +376,7 @@
         "fulghor",
         "heolstor",
         "harmonia",
-        "straghess",
-        "unknown"
+        "straghess"
       ],
       "relicImages": [
         "assets/relics/hermit-general5_1.png",
@@ -428,6 +427,20 @@
       "hpLv15": "1016(1524)",
       "concept": "巨人の火狙いだけど属性攻撃力に寄せているので序盤魔術も狂い火もいける",
       "createdAt": "2026-09-21"
+    },
+    {
+      "id": "hermit-unknown",
+      "characterId": "hermit",
+      "bossIds": [
+        "unknown"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-unknown_1.png",
+        "assets/relics/hermit-unknown_2.png"
+      ],
+      "hpLv15": "1185(1777)",
+      "concept": "不明用属性隠者",
+      "createdAt": "2026-10-03"
     },
     {
       "id": "recluse-skillpractice",
