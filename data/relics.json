@@ -115,9 +115,9 @@
         "assets/relics/guardian-gladius_1.png",
         "assets/relics/guardian-gladius_2.png"
       ],
-      "hpLv15": 1650,
-      "concept": "95%ラススタを想定してクロスボウ見つけやすくする",
-      "createdAt": "2026-09-21"
+      "hpLv15": 1694,
+      "concept": "ラススタを想定してクロスボウ見つけやすくする",
+      "createdAt": "2026-10-05"
     },
     {
       "id": "guardian-adel",
@@ -126,12 +126,12 @@
         "assets/relics/guardian-adel_1.png",
         "assets/relics/guardian-adel_2.png"
       ],
-      "hpLv15": 1628,
+      "hpLv15": 1584,
       "concept": "竜巻スタジアムをアーツキャンセルする。大弓でタゲ取って掴みからアーツ回収。刺剣で状態異常を狙う。エンチャ後は左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "adel"
       ],
-      "createdAt": "2026-09-21"
+      "createdAt": "2026-10-05"
     },
     {
       "id": "guardian-gnoster",
@@ -177,16 +177,29 @@
     {
       "id": "guardian-libra",
       "characterId": "guardian",
-      "relicImages": [
-        "assets/relics/guardian-libra_1.png",
-        "assets/relics/guardian-libra_2.png"
-      ],
-      "hpLv15": 1584,
-      "concept": "ガードヘイトで罪人トレイン。形態変化後から状態異常を狙う。属性技でガードカウンターしない",
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-09-08"
+      "concept": "ガードヘイト: ガードヘイトで罪人トレイン\n刺剣: 常夜は形態変化後から状態異常を狙う\nクロスボウ: ラススタを想定してクロスボウ見つけやすくする",
+      "variantGroups": [
+        {
+          "label": "ガードヘイトクロスボウ",
+          "hpLv15": 1584,
+          "images": [
+            "assets/relics/guardian-libra-hate-crossbow_1.png",
+            "assets/relics/guardian-libra-hate-crossbow_2.png"
+          ]
+        },
+        {
+          "label": "ガードヘイト刺剣",
+          "hpLv15": 1584,
+          "images": [
+            "assets/relics/guardian-libra_1.png",
+            "assets/relics/guardian-libra_2.png"
+          ]
+        }
+      ],
+      "createdAt": "2026-10-05"
     },
     {
       "id": "guardian-fulghor-heolstor-straghess",
