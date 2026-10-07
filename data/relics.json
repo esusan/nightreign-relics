@@ -380,10 +380,24 @@
       "createdAt": "2026-09-22"
     },
     {
+      "id": "hermit-gladius",
+      "characterId": "hermit",
+      "bossIds": [
+        "gladius"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-gladius_1.png",
+        "assets/relics/hermit-gladius_2.png"
+      ],
+      "hpLv15": "1078(1617)",
+      "pebbleLv15": 143,
+      "concept": "炎、属性カットを厚くする",
+      "createdAt": "2026-10-07"
+    },
+    {
       "id": "hermit-general5",
       "characterId": "hermit",
       "bossIds": [
-        "gladius",
         "adel",
         "gnoster",
         "fulghor",
@@ -396,8 +410,9 @@
         "assets/relics/hermit-general5_2.png"
       ],
       "hpLv15": "1078(1617)",
-      "concept": "スキル出血抜きの堅実構成",
-      "createdAt": "2026-09-14"
+      "pebbleLv15": 162,
+      "concept": "正統派魔術隠者",
+      "createdAt": "2026-10-07"
     },
     {
       "id": "hermit-maris",
@@ -406,12 +421,13 @@
         "maris"
       ],
       "relicImages": [
-        "assets/relics/hermit-maris_1.png",
-        "assets/relics/hermit-maris_2.png"
+        "assets/relics/hermit-unknown_1.png",
+        "assets/relics/hermit-unknown_2.png"
       ],
-      "hpLv15": "990(1485)",
-      "concept": "魔術強化はストームルーラーに乗らないので魔力攻撃力に変更。睡眠耐性+1も入れる",
-      "createdAt": "2026-09-23"
+      "hpLv15": "1185(1777)",
+      "pebbleLv15": 141,
+      "concept": "通常常夜両対応するために属性に寄せる。雷の槍を確保しておきたい",
+      "createdAt": "2026-10-07"
     },
     {
       "id": "hermit-libra",
@@ -420,12 +436,13 @@
         "assets/relics/hermit-libra_1.png",
         "assets/relics/hermit-libra_2.png"
       ],
-      "hpLv15": "980(1470)",
+      "hpLv15": "1185(1777)",
+      "pebbleLv15": 138,
       "concept": "発狂耐性入れる",
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-09-14"
+      "createdAt": "2026-10-07"
     },
     {
       "id": "hermit-caligo",
@@ -438,8 +455,9 @@
         "assets/relics/hermit-caligo_2.png"
       ],
       "hpLv15": "1113(1669)",
-      "concept": "祈祷隠者。白雷アーツキャンセルも狙う",
-      "createdAt": "2026-10-03"
+      "pebbleLv15": 133,
+      "concept": "炎系祈祷を狙う。白雷アーツキャンセルできるようにしておく",
+      "createdAt": "2026-10-07"
     },
     {
       "id": "hermit-unknown",
@@ -452,8 +470,9 @@
         "assets/relics/hermit-unknown_2.png"
       ],
       "hpLv15": "1185(1777)",
-      "concept": "不明用属性隠者",
-      "createdAt": "2026-10-03"
+      "pebbleLv15": 141,
+      "concept": "臨機応変に立ち回れるようにする",
+      "createdAt": "2026-10-07"
     },
     {
       "id": "recluse-skillpractice",

@@ -352,6 +352,20 @@ async function main() {
       return hpBadge;
     }
 
+    function buildPebbleBadge(value) {
+      const badge = document.createElement("span");
+      badge.className = "pebble-badge";
+      const statLabel = document.createElement("span");
+      statLabel.className = "stat-label stat-label-pebble";
+      statLabel.textContent = "Lv15 つぶて";
+      const statValue = document.createElement("span");
+      statValue.className = "stat-value stat-value-pebble";
+      statValue.textContent = value ?? "未登録";
+      badge.appendChild(statLabel);
+      badge.appendChild(statValue);
+      return badge;
+    }
+
     const bossLabel = bossNames.join("・");
     const hasGroupHp = (entry.variantGroups ?? []).some((g) => g.hpLv15 != null);
 
@@ -390,6 +404,10 @@ async function main() {
     const stat = document.createElement("div");
     stat.className = "stat-row";
     if (!hasGroupHp) stat.appendChild(buildHpBadge(entry.hpLv15));
+    // つぶてダメージは隠者のみ表示（値がなければ未登録）
+    if (entry.characterId === "hermit" || entry.pebbleLv15 != null) {
+      stat.appendChild(buildPebbleBadge(entry.pebbleLv15));
+    }
 
     if (entry.createdAt) {
       const dateLabel = document.createElement("span");

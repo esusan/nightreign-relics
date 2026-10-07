@@ -354,6 +354,23 @@ body {
   color: #ffffff;
 }
 
+.pebble-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  background: #4a3806;
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+}
+
+.pebble-badge .stat-label-pebble {
+  color: #f3e3b0;
+}
+
+.pebble-badge .stat-value-pebble {
+  color: #ffffff;
+}
+
 .divider {
   border: none;
   border-top: 1px solid var(--border);
