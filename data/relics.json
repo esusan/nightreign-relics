@@ -116,6 +116,7 @@
         "assets/relics/guardian-gladius_2.png"
       ],
       "hpLv15": 1694,
+      "attackLv15": 103,
       "concept": "ラススタを想定してクロスボウ見つけやすくする",
       "createdAt": "2026-10-05"
     },
@@ -127,6 +128,7 @@
         "assets/relics/guardian-adel_2.png"
       ],
       "hpLv15": 1584,
+      "attackLv15": 101,
       "concept": "竜巻スタジアムをアーツキャンセルする。大弓でタゲ取って掴みからアーツ回収。刺剣で状態異常を狙う。エンチャ後は左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "adel"
@@ -144,6 +146,7 @@
         {
           "label": "耐久特化",
           "hpLv15": 1742,
+          "attackLv15": 115,
           "images": [
             "assets/relics/guardian-gnoster-taikyu_1.png",
             "assets/relics/guardian-gnoster-taikyu_2.png"
@@ -152,6 +155,7 @@
         {
           "label": "戦技寄せ",
           "hpLv15": 1621,
+          "attackLv15": 122,
           "images": [
             "assets/relics/guardian-gnoster-senki_1.png",
             "assets/relics/guardian-gnoster-senki_2.png"
@@ -168,6 +172,7 @@
         "assets/relics/guardian-maris_2.png"
       ],
       "hpLv15": 1694,
+      "attackLv15": 103,
       "concept": "睡眠耐性で眠らない。スキルカットで味方の耐久を上げる。通常時は触手を盾チク",
       "bossIds": [
         "maris"
@@ -185,6 +190,7 @@
         {
           "label": "ガードヘイトクロスボウ",
           "hpLv15": 1584,
+          "attackLv15": 102,
           "images": [
             "assets/relics/guardian-libra-hate-crossbow_1.png",
             "assets/relics/guardian-libra-hate-crossbow_2.png"
@@ -193,6 +199,7 @@
         {
           "label": "ガードヘイト刺剣",
           "hpLv15": 1584,
+          "attackLv15": 99,
           "images": [
             "assets/relics/guardian-libra_1.png",
             "assets/relics/guardian-libra_2.png"
@@ -209,6 +216,7 @@
         "assets/relics/guardian-fulghor-heolstor-straghess_2.png"
       ],
       "hpLv15": 1694,
+      "attackLv15": 103,
       "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
         "fulghor",
@@ -224,6 +232,7 @@
         "assets/relics/guardian-caligo_2.png"
       ],
       "hpLv15": 1562,
+      "attackLv15": "85+冷気",
       "concept": "エレオノーラ狙いでR1擦ってアーツ溜め重視、常夜カリゴの大技をキャンセルする。炎デバフも。左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "caligo"
@@ -241,6 +250,7 @@
         "assets/relics/guardian-heolstor_2.png"
       ],
       "hpLv15": 1694,
+      "attackLv15": 103,
       "concept": "深度4圧倒的ダブルドーナツ率に対応するためにガードアーツを2積み",
       "createdAt": "2026-09-14"
     },
@@ -252,6 +262,7 @@
         "assets/relics/guardian-harmonia_2.png"
       ],
       "hpLv15": 1540,
+      "attackLv15": 107,
       "concept": "ガーカンでタイマンでも倒せるように火力を出す",
       "bossIds": [
         "harmonia"
@@ -266,6 +277,7 @@
         "assets/relics/guardian-unknown_2.png"
       ],
       "hpLv15": 1621,
+      "attackLv15": 103,
       "concept": "汎用+夜侵入",
       "bossIds": [
         "unknown"
@@ -280,6 +292,7 @@
         "assets/relics/guardian-fukuchan_2.png"
       ],
       "hpLv15": 1476,
+      "attackLv15": 107,
       "concept": "自認復讐者ちゃん",
       "bossIds": [
         "play"
@@ -294,6 +307,7 @@
         "assets/relics/guardian-mazyutsu_2.png"
       ],
       "hpLv15": 1320,
+      "attackLv15": 105,
       "concept": "自認隠者",
       "bossIds": [
         "play"
@@ -308,6 +322,7 @@
         "assets/relics/ironeye-all_2.png"
       ],
       "hpLv15": 1258,
+      "attackLv15": "60+毒",
       "concept": "ムキムキの目。武器ローグライクしたい",
       "bossIds": [
         "gladius",
@@ -331,6 +346,7 @@
         "assets/relics/ironeye-gladius_2.png"
       ],
       "hpLv15": 1258,
+      "attackLv15": "52+毒",
       "concept": "炎カットと物理カットを厚めにする",
       "bossIds": [
         "gladius"
@@ -344,12 +360,13 @@
         "assets/relics/ironeye-maris_1.png",
         "assets/relics/ironeye-maris_2.png"
       ],
-      "hpLv15": 1144,
+      "hpLv15": 1258,
+      "attackLv15": "59+毒",
       "concept": "さすがに睡眠耐性積ませてください",
       "bossIds": [
         "maris"
       ],
-      "createdAt": "2026-09-08"
+      "createdAt": "2026-10-07"
     },
     {
       "id": "ironeye-libra",
@@ -359,6 +376,7 @@
         "assets/relics/ironeye-libra_2.png"
       ],
       "hpLv15": 940,
+      "attackLv15": "133+毒",
       "concept": "作ってみた1段",
       "bossIds": [
         "libra"
@@ -373,6 +391,7 @@
         "assets/relics/ironeye-rune_2.png"
       ],
       "hpLv15": 992,
+      "attackLv15": "63+毒",
       "concept": "取得ルーン増加3積み",
       "bossIds": [
         "play"
@@ -390,8 +409,8 @@
         "assets/relics/hermit-gladius_2.png"
       ],
       "hpLv15": "1078(1617)",
-      "pebbleLv15": 143,
-      "concept": "炎、属性カットを厚くする",
+      "attackLv15": 143,
+      "concept": "炎・属性カットを厚くする",
       "createdAt": "2026-10-07"
     },
     {
@@ -410,9 +429,9 @@
         "assets/relics/hermit-general5_2.png"
       ],
       "hpLv15": "1078(1617)",
-      "pebbleLv15": 162,
+      "attackLv15": 162,
       "concept": "正統派魔術隠者",
-      "createdAt": "2026-10-07"
+      "createdAt": "2026-09-14"
     },
     {
       "id": "hermit-maris",
@@ -425,7 +444,7 @@
         "assets/relics/hermit-unknown_2.png"
       ],
       "hpLv15": "1185(1777)",
-      "pebbleLv15": 141,
+      "attackLv15": 141,
       "concept": "通常常夜両対応するために属性に寄せる。雷の槍を確保しておきたい",
       "createdAt": "2026-10-07"
     },
@@ -437,7 +456,7 @@
         "assets/relics/hermit-libra_2.png"
       ],
       "hpLv15": "1185(1777)",
-      "pebbleLv15": 138,
+      "attackLv15": 138,
       "concept": "発狂耐性入れる",
       "bossIds": [
         "libra"
@@ -455,9 +474,9 @@
         "assets/relics/hermit-caligo_2.png"
       ],
       "hpLv15": "1113(1669)",
-      "pebbleLv15": 133,
+      "attackLv15": 133,
       "concept": "炎系祈祷を狙う。白雷アーツキャンセルできるようにしておく",
-      "createdAt": "2026-10-07"
+      "createdAt": "2026-10-03"
     },
     {
       "id": "hermit-unknown",
@@ -470,7 +489,7 @@
         "assets/relics/hermit-unknown_2.png"
       ],
       "hpLv15": "1185(1777)",
-      "pebbleLv15": 141,
+      "attackLv15": 141,
       "concept": "臨機応変に立ち回れるようにする",
       "createdAt": "2026-10-07"
     },
@@ -494,9 +513,10 @@
         "assets/relics/recluse-skillpractice_1.png",
         "assets/relics/recluse-skillpractice_2.png"
       ],
-      "hpLv15": 1355,
+      "hpLv15": 1232,
+      "attackLv15": 159,
       "concept": "戦技練習用",
-      "createdAt": "2026-09-02"
+      "createdAt": "2026-10-07"
     },
     {
       "id": "recluse-all",
@@ -505,7 +525,8 @@
         "assets/relics/recluse-all_1.png",
         "assets/relics/recluse-all_2.png"
       ],
-      "hpLv15": 1476,
+      "hpLv15": 1342,
+      "attackLv15": 142,
       "concept": "もりもりHP",
       "bossIds": [
         "gladius",
@@ -520,21 +541,23 @@
         "straghess",
         "unknown"
       ],
-      "createdAt": "2026-08-15"
+      "createdAt": "2026-10-07"
     },
     {
       "id": "recluse-caligo",
       "characterId": "recluse",
       "bossIds": [
+        "gnoster",
         "caligo"
       ],
       "relicImages": [
         "assets/relics/recluse-caligo_1.png",
         "assets/relics/recluse-caligo_2.png"
       ],
-      "hpLv15": 1355,
-      "concept": "大剣追撃二刀バッタするだけ",
-      "createdAt": "2026-09-01"
+      "hpLv15": 1232,
+      "attackLv15": 150,
+      "concept": "スキル追撃",
+      "createdAt": "2026-10-07"
     },
     {
       "id": "undertaker-all-hp",
@@ -544,6 +567,7 @@
         "assets/relics/undertaker-all-hp_2.png"
       ],
       "hpLv15": 1379,
+      "attackLv15": 107,
       "concept": "HP重視",
       "bossIds": [
         "gladius",
@@ -561,30 +585,6 @@
       "createdAt": "2026-09-15"
     },
     {
-      "id": "undertaker-all",
-      "characterId": "undertaker",
-      "relicImages": [
-        "assets/relics/undertaker-all_1.png",
-        "assets/relics/undertaker-all_2.png"
-      ],
-      "hpLv15": 1258,
-      "concept": "敵倒アーツ重視",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "createdAt": "2026-09-13"
-    },
-    {
       "id": "raider-all",
       "characterId": "raider",
       "relicImages": [
@@ -592,6 +592,7 @@
         "assets/relics/raider-all_2.png"
       ],
       "hpLv15": 1524,
+      "attackLv15": 175,
       "concept": "スキル命中時入らない",
       "bossIds": [
         "gladius",

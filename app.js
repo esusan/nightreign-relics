@@ -352,14 +352,14 @@ async function main() {
       return hpBadge;
     }
 
-    function buildPebbleBadge(value) {
+    function buildAttackBadge(value) {
       const badge = document.createElement("span");
-      badge.className = "pebble-badge";
+      badge.className = "attack-badge";
       const statLabel = document.createElement("span");
-      statLabel.className = "stat-label stat-label-pebble";
-      statLabel.textContent = "Lv15 つぶて";
+      statLabel.className = "stat-label stat-label-attack";
+      statLabel.textContent = "Lv15 攻撃力";
       const statValue = document.createElement("span");
-      statValue.className = "stat-value stat-value-pebble";
+      statValue.className = "stat-value stat-value-attack";
       statValue.textContent = value ?? "未登録";
       badge.appendChild(statLabel);
       badge.appendChild(statValue);
@@ -386,6 +386,7 @@ async function main() {
           const hpRow = document.createElement("div");
           hpRow.className = "relic-block-hp";
           hpRow.appendChild(buildHpBadge(group.hpLv15));
+          hpRow.appendChild(buildAttackBadge(group.attackLv15));
           block.appendChild(hpRow);
         }
         card.appendChild(block);
@@ -404,10 +405,7 @@ async function main() {
     const stat = document.createElement("div");
     stat.className = "stat-row";
     if (!hasGroupHp) stat.appendChild(buildHpBadge(entry.hpLv15));
-    // つぶてダメージは隠者のみ表示（値がなければ未登録）
-    if (entry.characterId === "hermit" || entry.pebbleLv15 != null) {
-      stat.appendChild(buildPebbleBadge(entry.pebbleLv15));
-    }
+    if (!hasGroupHp) stat.appendChild(buildAttackBadge(entry.attackLv15));
 
     if (entry.createdAt) {
       const dateLabel = document.createElement("span");
