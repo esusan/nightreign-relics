@@ -376,7 +376,7 @@
         "assets/relics/ironeye-libra_2.png"
       ],
       "hpLv15": 940,
-      "attackLv15": "133+毒",
+      "attackLv15": 133,
       "concept": "作ってみた1段",
       "bossIds": [
         "libra"
@@ -494,31 +494,6 @@
       "createdAt": "2026-10-07"
     },
     {
-      "id": "recluse-skillpractice",
-      "characterId": "recluse",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "relicImages": [
-        "assets/relics/recluse-skillpractice_1.png",
-        "assets/relics/recluse-skillpractice_2.png"
-      ],
-      "hpLv15": 1232,
-      "attackLv15": 159,
-      "concept": "戦技練習用",
-      "createdAt": "2026-10-07"
-    },
-    {
       "id": "recluse-all",
       "characterId": "recluse",
       "relicImages": [
@@ -608,6 +583,21 @@
         "unknown"
       ],
       "createdAt": "2026-09-26"
+    },
+    {
+      "id": "recluse-skillpractice",
+      "characterId": "recluse",
+      "bossIds": [
+        "play"
+      ],
+      "relicImages": [
+        "assets/relics/recluse-skillpractice_1.png",
+        "assets/relics/recluse-skillpractice_2.png"
+      ],
+      "hpLv15": 1232,
+      "attackLv15": 159,
+      "concept": "戦技練習用",
+      "createdAt": "2026-10-07"
     }
   ]
 }
