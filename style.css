@@ -266,6 +266,9 @@ body {
 
 .relic-block-hp {
   margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .relic-block-label {
@@ -354,7 +357,7 @@ body {
   color: #ffffff;
 }
 
-.pebble-badge {
+.attack-badge {
   display: inline-flex;
   align-items: baseline;
   gap: 0.35rem;
@@ -363,11 +366,11 @@ body {
   padding: 0.2rem 0.8rem;
 }
 
-.pebble-badge .stat-label-pebble {
+.attack-badge .stat-label-attack {
   color: #f3e3b0;
 }
 
-.pebble-badge .stat-value-pebble {
+.attack-badge .stat-value-attack {
   color: #ffffff;
 }
 
