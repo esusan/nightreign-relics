@@ -451,11 +451,20 @@
         },
         {
           "label": "戦技型",
-          "hpLv15": "968(1452)",
-          "attackLv15": 156,
+          "hpLv15": "1016(1524)",
+          "attackLv15": 149,
           "images": [
             "assets/relics/hermit-maris-sengi_1.png",
             "assets/relics/hermit-maris-sengi_2.png"
+          ]
+        },
+        {
+          "label": "魔力ビルド",
+          "hpLv15": "990(1485)",
+          "attackLv15": 171,
+          "images": [
+            "assets/relics/hermit-maris-maryoku_1.png",
+            "assets/relics/hermit-maris-maryoku_2.png"
           ]
         }
       ],
