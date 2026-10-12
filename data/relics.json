@@ -439,12 +439,26 @@
       "bossIds": [
         "maris"
       ],
-      "relicImages": [
-        "assets/relics/hermit-maris_1.png",
-        "assets/relics/hermit-maris_2.png"
+      "variantGroups": [
+        {
+          "label": "属性型",
+          "hpLv15": "1089(1633)",
+          "attackLv15": 157,
+          "images": [
+            "assets/relics/hermit-maris_1.png",
+            "assets/relics/hermit-maris_2.png"
+          ]
+        },
+        {
+          "label": "戦技型",
+          "hpLv15": "968(1452)",
+          "attackLv15": 156,
+          "images": [
+            "assets/relics/hermit-maris-sengi_1.png",
+            "assets/relics/hermit-maris-sengi_2.png"
+          ]
+        }
       ],
-      "hpLv15": "1089(1633)",
-      "attackLv15": 157,
       "concept": "通常用に雷武器を確保しておく。睡眠苔を拾いたい",
       "createdAt": "2026-10-12"
     },
