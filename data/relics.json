@@ -443,10 +443,10 @@
         "assets/relics/hermit-maris_1.png",
         "assets/relics/hermit-maris_2.png"
       ],
-      "hpLv15": "1078(1617)",
-      "attackLv15": 127,
-      "concept": "通常常夜両対応するために属性に寄せる。雷の槍を確保しておきたい。睡眠耐性+1",
-      "createdAt": "2026-10-08"
+      "hpLv15": "1089(1633)",
+      "attackLv15": 157,
+      "concept": "通常用に雷武器を確保しておく。睡眠苔を拾いたい",
+      "createdAt": "2026-10-12"
     },
     {
       "id": "hermit-libra",
