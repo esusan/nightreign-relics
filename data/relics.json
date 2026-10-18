@@ -582,8 +582,8 @@
         "assets/relics/duchess-all_1.png",
         "assets/relics/duchess-all_2.png"
       ],
-      "hpLv15": 900,
-      "attackLv15": "94+冷気",
+      "hpLv15": 1000,
+      "attackLv15": "82+出血",
       "concept": "基本",
       "bossIds": [
         "gladius",
@@ -607,7 +607,7 @@
         "assets/relics/duchess-sengi_1.png",
         "assets/relics/duchess-sengi_2.png"
       ],
-      "hpLv15": 920,
+      "hpLv15": 900,
       "attackLv15": 109,
       "concept": "戦技型",
       "bossIds": [
