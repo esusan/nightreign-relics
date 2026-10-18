@@ -434,4 +434,21 @@ async function main() {
   render();
 }
 
+// アクセス数の集計（GoatCounter。夜渡りピッカーと同じサイトに /nightreign-relics/ として送る）
+// 絞り込みのクエリで別ページ扱いにならないよう、パスだけ送る。参照元もクエリを落とす
+function countView() {
+  if (location.protocol === "file:" || /(localhost$|^127\.|^\[::1\]$)/.test(location.hostname)) return;
+  const q = {
+    p: location.pathname,
+    t: document.title,
+    r: document.referrer.replace(/[?#].*$/, ""),
+    s: screen.width,
+    b: navigator.webdriver ? 153 : 0,
+    rnd: Math.random().toString(36).slice(2),
+  };
+  const url = "https://esusan.goatcounter.com/count?" + new URLSearchParams(q);
+  if (!(navigator.sendBeacon && navigator.sendBeacon(url))) new Image().src = url;
+}
+
 main();
+countView();
