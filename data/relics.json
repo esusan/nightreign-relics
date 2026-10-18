@@ -1,6 +1,11 @@
 {
   "characters": [
     {
+      "id": "recluse",
+      "name": "追跡者",
+      "icon": "assets/characters/recluse.png"
+    },
+    {
       "id": "guardian",
       "name": "守護者",
       "icon": "assets/characters/guardian.png"
@@ -11,9 +16,14 @@
       "icon": "assets/characters/ironeye.png"
     },
     {
-      "id": "recluse",
-      "name": "追跡者",
-      "icon": "assets/characters/recluse.png"
+      "id": "duchess",
+      "name": "レディ",
+      "icon": "assets/characters/duchess.png"
+    },
+    {
+      "id": "raider",
+      "name": "無頼漢",
+      "icon": "assets/characters/raider.png"
     },
     {
       "id": "hermit",
@@ -24,11 +34,6 @@
       "id": "undertaker",
       "name": "葬儀屋",
       "icon": "assets/characters/undertaker.png"
-    },
-    {
-      "id": "raider",
-      "name": "無頼漢",
-      "icon": "assets/characters/raider.png"
     }
   ],
   "bosses": [
@@ -569,6 +574,56 @@
         "unknown"
       ],
       "createdAt": "2026-09-26"
+    },
+    {
+      "id": "duchess-all",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-all_1.png",
+        "assets/relics/duchess-all_2.png"
+      ],
+      "hpLv15": 900,
+      "attackLv15": "94+冷気",
+      "concept": "基本",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-10-18"
+    },
+    {
+      "id": "duchess-sengi",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-sengi_1.png",
+        "assets/relics/duchess-sengi_2.png"
+      ],
+      "hpLv15": 920,
+      "attackLv15": 109,
+      "concept": "戦技型",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-10-18"
     },
     {
       "id": "recluse-skillpractice",
