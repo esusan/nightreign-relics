@@ -268,6 +268,7 @@
       ],
       "hpLv15": 1540,
       "attackLv15": 107,
+      "initialSkill": "落雷",
       "concept": "ガーカンでタイマンでも倒せるように火力を出す",
       "bossIds": [
         "harmonia"
@@ -493,6 +494,7 @@
       ],
       "hpLv15": 1342,
       "attackLv15": 142,
+      "initialSkill": "霜踏み",
       "concept": "もりもりHP",
       "bossIds": [
         "gladius",
@@ -522,6 +524,7 @@
       ],
       "hpLv15": 1232,
       "attackLv15": 150,
+      "initialSkill": "霜踏み",
       "concept": "スキル追撃",
       "createdAt": "2026-10-07"
     },
@@ -584,7 +587,8 @@
       ],
       "hpLv15": 1000,
       "attackLv15": "82+出血",
-      "concept": "基本",
+      "initialSkill": "冷気の霧",
+      "concept": "出血&冷気の霧",
       "bossIds": [
         "gladius",
         "adel",
@@ -601,6 +605,58 @@
       "createdAt": "2026-10-18"
     },
     {
+      "id": "duchess-saien",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-saien_1.png",
+        "assets/relics/duchess-saien_2.png"
+      ],
+      "hpLv15": 940,
+      "attackLv15": 97,
+      "initialSkill": "冷気の霧",
+      "concept": "再演",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-10-20"
+    },
+    {
+      "id": "duchess-kousuta-regain",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-kousuta-regain_1.png",
+        "assets/relics/duchess-kousuta-regain_2.png"
+      ],
+      "hpLv15": 960,
+      "attackLv15": 97,
+      "initialSkill": "冷気の霧",
+      "concept": "攻スタ&リゲイン",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-10-20"
+    },
+    {
       "id": "duchess-sengi",
       "characterId": "duchess",
       "relicImages": [
@@ -609,6 +665,7 @@
       ],
       "hpLv15": 900,
       "attackLv15": 109,
+      "initialSkill": "霜踏み",
       "concept": "戦技型",
       "bossIds": [
         "gladius",

@@ -366,6 +366,16 @@ async function main() {
       return badge;
     }
 
+    function buildSkillBadge(value) {
+      const badge = document.createElement("span");
+      badge.className = "skill-badge";
+      const statValue = document.createElement("span");
+      statValue.className = "stat-value stat-value-skill";
+      statValue.textContent = value;
+      badge.appendChild(statValue);
+      return badge;
+    }
+
     const bossLabel = bossNames.join("・");
     const hasGroupHp = (entry.variantGroups ?? []).some((g) => g.hpLv15 != null);
 
@@ -387,6 +397,7 @@ async function main() {
           hpRow.className = "relic-block-hp";
           hpRow.appendChild(buildHpBadge(group.hpLv15));
           hpRow.appendChild(buildAttackBadge(group.attackLv15));
+          if (group.initialSkill) hpRow.appendChild(buildSkillBadge(group.initialSkill));
           block.appendChild(hpRow);
         }
         card.appendChild(block);
@@ -406,6 +417,7 @@ async function main() {
     stat.className = "stat-row";
     if (!hasGroupHp) stat.appendChild(buildHpBadge(entry.hpLv15));
     if (!hasGroupHp) stat.appendChild(buildAttackBadge(entry.attackLv15));
+    if (!hasGroupHp && entry.initialSkill) stat.appendChild(buildSkillBadge(entry.initialSkill));
 
     if (entry.createdAt) {
       const dateLabel = document.createElement("span");
