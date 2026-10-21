@@ -579,58 +579,6 @@
       "createdAt": "2026-09-26"
     },
     {
-      "id": "duchess-all",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-all_1.png",
-        "assets/relics/duchess-all_2.png"
-      ],
-      "hpLv15": 1000,
-      "attackLv15": "82+出血",
-      "initialSkill": "冷気の霧",
-      "concept": "出血&冷気の霧",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "createdAt": "2026-10-18"
-    },
-    {
-      "id": "duchess-saien",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-saien_1.png",
-        "assets/relics/duchess-saien_2.png"
-      ],
-      "hpLv15": 940,
-      "attackLv15": 97,
-      "initialSkill": "冷気の霧",
-      "concept": "再演",
-      "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
-      ],
-      "createdAt": "2026-10-20"
-    },
-    {
       "id": "duchess-kousuta-regain",
       "characterId": "duchess",
       "relicImages": [
@@ -657,6 +605,40 @@
       "createdAt": "2026-10-20"
     },
     {
+      "id": "duchess-gladius",
+      "characterId": "duchess",
+      "bossIds": [
+        "gladius"
+      ],
+      "relicImages": [
+        "assets/relics/duchess-gladius_1.png",
+        "assets/relics/duchess-gladius_2.png"
+      ],
+      "hpLv15": 1056,
+      "attackLv15": 91,
+      "initialSkill": "冷気の霧",
+      "concept": "炎カット属性カットを厚くする",
+      "createdAt": "2026-10-21"
+    },
+    {
+      "id": "duchess-saien",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-saien_1.png",
+        "assets/relics/duchess-saien_2.png"
+      ],
+      "hpLv15": 940,
+      "attackLv15": 97,
+      "initialSkill": "冷気の霧",
+      "concept": "再演",
+      "bossIds": [
+        "gnoster",
+        "fulghor",
+        "heolstor"
+      ],
+      "createdAt": "2026-10-20"
+    },
+    {
       "id": "duchess-sengi",
       "characterId": "duchess",
       "relicImages": [
@@ -668,19 +650,25 @@
       "initialSkill": "霜踏み",
       "concept": "戦技型",
       "bossIds": [
-        "gladius",
-        "adel",
-        "gnoster",
-        "maris",
-        "libra",
-        "fulghor",
-        "caligo",
-        "heolstor",
-        "harmonia",
-        "straghess",
-        "unknown"
+        "maris"
       ],
       "createdAt": "2026-10-18"
+    },
+    {
+      "id": "duchess-libra",
+      "characterId": "duchess",
+      "bossIds": [
+        "libra"
+      ],
+      "relicImages": [
+        "assets/relics/duchess-libra_1.png",
+        "assets/relics/duchess-libra_2.png"
+      ],
+      "hpLv15": 1020,
+      "attackLv15": 97,
+      "initialSkill": "冷気の霧",
+      "concept": "ガードヘイト",
+      "createdAt": "2026-10-21"
     },
     {
       "id": "recluse-skillpractice",
