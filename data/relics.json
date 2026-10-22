@@ -621,24 +621,6 @@
       "createdAt": "2026-10-21"
     },
     {
-      "id": "duchess-saien",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-saien_1.png",
-        "assets/relics/duchess-saien_2.png"
-      ],
-      "hpLv15": 940,
-      "attackLv15": 97,
-      "initialSkill": "冷気の霧",
-      "concept": "再演",
-      "bossIds": [
-        "gnoster",
-        "fulghor",
-        "heolstor"
-      ],
-      "createdAt": "2026-10-20"
-    },
-    {
       "id": "duchess-sengi",
       "characterId": "duchess",
       "relicImages": [
@@ -669,6 +651,22 @@
       "initialSkill": "冷気の霧",
       "concept": "ガードヘイト",
       "createdAt": "2026-10-21"
+    },
+    {
+      "id": "duchess-saien",
+      "characterId": "duchess",
+      "relicImages": [
+        "assets/relics/duchess-saien_1.png",
+        "assets/relics/duchess-saien_2.png"
+      ],
+      "hpLv15": 940,
+      "attackLv15": 97,
+      "initialSkill": "冷気の霧",
+      "concept": "再演",
+      "bossIds": [
+        "play"
+      ],
+      "createdAt": "2026-10-20"
     },
     {
       "id": "recluse-skillpractice",
