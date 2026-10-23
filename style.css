@@ -434,17 +434,34 @@ body {
 /* OBSのブラウザソース専用（app.jsがhtmlにobsクラスを付ける） */
 html.obs {
   overflow: auto !important;
-  scrollbar-width: none;
 }
 
 html.obs body {
   overflow: auto !important;
+  background: rgba(0, 0, 0, 0.8);
 }
 
+/* scrollbar-width/scrollbar-colorを指定するとChromiumでは::-webkit-scrollbarが無視されるので使わない */
 html.obs ::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+html.obs ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html.obs ::-webkit-scrollbar-thumb {
+  background: var(--border);
+  background: color-mix(in srgb, var(--text-muted) 35%, transparent);
+  border-radius: 999px;
+}
+
+html.obs .site-header {
   display: none;
 }
 
 html.obs .filters {
   position: static;
+  background: transparent;
 }
