@@ -430,3 +430,21 @@ body {
     background: var(--bg);
   }
 }
+
+/* OBSのブラウザソース専用（app.jsがhtmlにobsクラスを付ける） */
+html.obs {
+  overflow: auto !important;
+  scrollbar-width: none;
+}
+
+html.obs body {
+  overflow: auto !important;
+}
+
+html.obs ::-webkit-scrollbar {
+  display: none;
+}
+
+html.obs .filters {
+  position: static;
+}

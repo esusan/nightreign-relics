@@ -1,3 +1,6 @@
+// OBSのブラウザソースではwindow.obsstudioが生えるので、OBS専用スタイル用のクラスを付ける
+if (window.obsstudio) document.documentElement.classList.add("obs");
+
 async function main() {
   const res = await fetch("data/relics.json");
   const data = await res.json();
