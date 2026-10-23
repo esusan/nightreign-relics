@@ -465,3 +465,10 @@ html.obs .filters {
   position: static;
   background: transparent;
 }
+
+html.obs .filters-bottom {
+  display: block;
+  margin-top: 0.5rem;
+  border-bottom: none;
+  border-top: 1px solid var(--border);
+}
