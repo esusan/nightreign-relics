@@ -3,37 +3,47 @@
     {
       "id": "recluse",
       "name": "追跡者",
-      "icon": "assets/characters/recluse.png"
+      "icon": "assets/characters/recluse.png",
+      "attackLabel": "Lv15 追跡者の大剣R1"
     },
     {
       "id": "guardian",
       "name": "守護者",
-      "icon": "assets/characters/guardian.png"
+      "icon": "assets/characters/guardian.png",
+      "attackLabel": "Lv15 守護者の斧槍R1",
+      "extraStats": [
+        { "key": "guardCounterLv15", "label": "Lv15 ガード反射&タメガーカン" }
+      ]
     },
     {
       "id": "ironeye",
       "name": "鉄の目",
-      "icon": "assets/characters/ironeye.png"
+      "icon": "assets/characters/ironeye.png",
+      "attackLabel": "Lv15 鉄の目の弓R1"
     },
     {
       "id": "duchess",
       "name": "レディ",
-      "icon": "assets/characters/duchess.png"
+      "icon": "assets/characters/duchess.png",
+      "attackLabel": "Lv15 レディの短剣R1"
     },
     {
       "id": "raider",
       "name": "無頼漢",
-      "icon": "assets/characters/raider.png"
+      "icon": "assets/characters/raider.png",
+      "attackLabel": "Lv15 無頼漢の大斧R1"
     },
     {
       "id": "hermit",
       "name": "隠者",
-      "icon": "assets/characters/hermit.png"
+      "icon": "assets/characters/hermit.png",
+      "attackLabel": "Lv15 隠者の杖 輝石のつぶて"
     },
     {
       "id": "undertaker",
       "name": "葬儀屋",
-      "icon": "assets/characters/undertaker.png"
+      "icon": "assets/characters/undertaker.png",
+      "attackLabel": "Lv15 葬儀屋の槌R1"
     }
   ],
   "bosses": [
@@ -122,6 +132,7 @@
       ],
       "hpLv15": 1694,
       "attackLv15": 103,
+      "guardCounterLv15": 271,
       "concept": "ラススタを想定してクロスボウ見つけやすくする",
       "createdAt": "2026-10-05"
     },
@@ -134,6 +145,7 @@
       ],
       "hpLv15": 1584,
       "attackLv15": 101,
+      "guardCounterLv15": 267,
       "concept": "竜巻スタジアムをアーツキャンセルする。大弓でタゲ取って掴みからアーツ回収。刺剣で状態異常を狙う。エンチャ後は左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "adel"
@@ -152,6 +164,7 @@
           "label": "耐久特化",
           "hpLv15": 1742,
           "attackLv15": 115,
+          "guardCounterLv15": 302,
           "images": [
             "assets/relics/guardian-gnoster-taikyu_1.png",
             "assets/relics/guardian-gnoster-taikyu_2.png"
@@ -161,6 +174,7 @@
           "label": "戦技寄せ",
           "hpLv15": 1621,
           "attackLv15": 122,
+          "guardCounterLv15": 314,
           "images": [
             "assets/relics/guardian-gnoster-senki_1.png",
             "assets/relics/guardian-gnoster-senki_2.png"
@@ -178,6 +192,7 @@
       ],
       "hpLv15": 1694,
       "attackLv15": 103,
+      "guardCounterLv15": 271,
       "concept": "睡眠耐性で眠らない。スキルカットで味方の耐久を上げる。通常時は触手を盾チク",
       "bossIds": [
         "maris"
@@ -196,6 +211,7 @@
           "label": "ガードヘイトクロスボウ",
           "hpLv15": 1584,
           "attackLv15": 102,
+          "guardCounterLv15": 271,
           "images": [
             "assets/relics/guardian-libra-hate-crossbow_1.png",
             "assets/relics/guardian-libra-hate-crossbow_2.png"
@@ -205,6 +221,7 @@
           "label": "ガードヘイト刺剣",
           "hpLv15": 1584,
           "attackLv15": 99,
+          "guardCounterLv15": 262,
           "images": [
             "assets/relics/guardian-libra_1.png",
             "assets/relics/guardian-libra_2.png"
@@ -222,6 +239,7 @@
       ],
       "hpLv15": 1694,
       "attackLv15": 103,
+      "guardCounterLv15": 624,
       "concept": "フルゴール: 雷武器でチャージ阻止。ガーカンでヘイト管理\nストラゲス: とにかく楽しい。味方の2連爆破回避が不安だったらアーツを切る",
       "bossIds": [
         "fulghor",
@@ -238,6 +256,7 @@
       ],
       "hpLv15": 1562,
       "attackLv15": "85+冷気",
+      "guardCounterLv15": 236,
       "concept": "エレオノーラ狙いでR1擦ってアーツ溜め重視、常夜カリゴの大技をキャンセルする。炎デバフも。左手にメイン武器・右手に回避戦技",
       "bossIds": [
         "caligo"
@@ -256,6 +275,7 @@
       ],
       "hpLv15": 1694,
       "attackLv15": 103,
+      "guardCounterLv15": 624,
       "concept": "深度4圧倒的ダブルドーナツ率に対応するためにガードアーツを2積み",
       "createdAt": "2026-09-14"
     },
@@ -269,6 +289,7 @@
       "hpLv15": 1540,
       "attackLv15": 107,
       "initialSkill": "落雷",
+      "guardCounterLv15": 961,
       "concept": "ガーカンでタイマンでも倒せるように火力を出す",
       "bossIds": [
         "harmonia"
@@ -284,6 +305,7 @@
       ],
       "hpLv15": 1621,
       "attackLv15": 103,
+      "guardCounterLv15": 612,
       "concept": "汎用+夜侵入",
       "bossIds": [
         "unknown"
@@ -312,13 +334,13 @@
         "assets/relics/guardian-mazyutsu_1.png",
         "assets/relics/guardian-mazyutsu_2.png"
       ],
-      "hpLv15": 1320,
+      "hpLv15": 1220,
       "attackLv15": 105,
       "concept": "自認隠者",
       "bossIds": [
         "play"
       ],
-      "createdAt": "2026-09-22"
+      "createdAt": "2026-10-24"
     },
     {
       "id": "ironeye-all",
@@ -424,7 +446,6 @@
       "characterId": "hermit",
       "bossIds": [
         "adel",
-        "gnoster",
         "fulghor",
         "heolstor",
         "harmonia",
@@ -439,6 +460,22 @@
       "attackLv15": 162,
       "concept": "正統派魔術隠者",
       "createdAt": "2026-09-14"
+    },
+    {
+      "id": "hermit-fire",
+      "characterId": "hermit",
+      "bossIds": [
+        "gnoster",
+        "caligo"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-fire_1.png",
+        "assets/relics/hermit-fire_2.png"
+      ],
+      "hpLv15": "1016(1524)",
+      "attackLv15": 149,
+      "concept": "炎祈祷隠者。カリゴは白雷を狙う",
+      "createdAt": "2026-10-24"
     },
     {
       "id": "hermit-maris",
@@ -469,21 +506,6 @@
         "libra"
       ],
       "createdAt": "2026-10-07"
-    },
-    {
-      "id": "hermit-caligo",
-      "characterId": "hermit",
-      "bossIds": [
-        "caligo"
-      ],
-      "relicImages": [
-        "assets/relics/hermit-caligo_1.png",
-        "assets/relics/hermit-caligo_2.png"
-      ],
-      "hpLv15": "1113(1669)",
-      "attackLv15": 133,
-      "concept": "炎系祈祷を狙う。白雷アーツキャンセルできるようにしておく",
-      "createdAt": "2026-10-03"
     },
     {
       "id": "recluse-all",
@@ -682,6 +704,21 @@
       "attackLv15": 159,
       "concept": "戦技練習用",
       "createdAt": "2026-10-07"
+    },
+    {
+      "id": "recluse-okane",
+      "characterId": "recluse",
+      "bossIds": [
+        "play"
+      ],
+      "relicImages": [
+        "assets/relics/recluse-okane_1.png",
+        "assets/relics/recluse-okane_2.png"
+      ],
+      "hpLv15": 1220,
+      "attackLv15": 146,
+      "concept": "取得ルーン増加x4",
+      "createdAt": "2026-10-24"
     }
   ]
 }

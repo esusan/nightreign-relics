@@ -6,6 +6,8 @@ async function main() {
   const data = await res.json();
 
   const characterMap = new Map(data.characters.map((c) => [c.id, c.name]));
+  const attackLabelMap = new Map(data.characters.map((c) => [c.id, c.attackLabel ?? "Lv15 攻撃力"]));
+  const extraStatsMap = new Map(data.characters.map((c) => [c.id, c.extraStats ?? []]));
   const characterIconMap = new Map(data.characters.map((c) => [c.id, c.icon]));
   const characterOrderMap = new Map(data.characters.map((c, i) => [c.id, i]));
   const bossMap = new Map(data.bosses.map((b) => [b.id, b.name]));
@@ -355,18 +357,26 @@ async function main() {
       return hpBadge;
     }
 
-    function buildAttackBadge(value) {
+    function buildAttackBadge(value, label = attackLabelMap.get(entry.characterId) ?? "Lv15 攻撃力") {
       const badge = document.createElement("span");
       badge.className = "attack-badge";
       const statLabel = document.createElement("span");
       statLabel.className = "stat-label stat-label-attack";
-      statLabel.textContent = "Lv15 攻撃力";
+      statLabel.textContent = label;
       const statValue = document.createElement("span");
       statValue.className = "stat-value stat-value-attack";
       statValue.textContent = value ?? "未登録";
       badge.appendChild(statLabel);
       badge.appendChild(statValue);
       return badge;
+    }
+
+    // キャラ別の追加ステータス（守護者のガード反射など）を攻撃力バッジと同じ見た目で並べる
+    function appendExtraStatBadges(container, source) {
+      for (const stat of extraStatsMap.get(entry.characterId) ?? []) {
+        if (source[stat.key] == null) continue;
+        container.appendChild(buildAttackBadge(source[stat.key], stat.label));
+      }
     }
 
     function buildSkillBadge(value) {
@@ -400,6 +410,7 @@ async function main() {
           hpRow.className = "relic-block-hp";
           hpRow.appendChild(buildHpBadge(group.hpLv15));
           hpRow.appendChild(buildAttackBadge(group.attackLv15));
+          appendExtraStatBadges(hpRow, group);
           if (group.initialSkill) hpRow.appendChild(buildSkillBadge(group.initialSkill));
           block.appendChild(hpRow);
         }
@@ -420,6 +431,7 @@ async function main() {
     stat.className = "stat-row";
     if (!hasGroupHp) stat.appendChild(buildHpBadge(entry.hpLv15));
     if (!hasGroupHp) stat.appendChild(buildAttackBadge(entry.attackLv15));
+    if (!hasGroupHp) appendExtraStatBadges(stat, entry);
     if (!hasGroupHp && entry.initialSkill) stat.appendChild(buildSkillBadge(entry.initialSkill));
 
     if (entry.createdAt) {
