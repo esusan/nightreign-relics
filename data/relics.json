@@ -681,14 +681,14 @@
         "assets/relics/duchess-saien_1.png",
         "assets/relics/duchess-saien_2.png"
       ],
-      "hpLv15": 940,
-      "attackLv15": 97,
+      "hpLv15": 920,
+      "attackLv15": 102,
       "initialSkill": "冷気の霧",
       "concept": "再演",
       "bossIds": [
         "play"
       ],
-      "createdAt": "2026-10-20"
+      "createdAt": "2026-10-24"
     },
     {
       "id": "recluse-skillpractice",
