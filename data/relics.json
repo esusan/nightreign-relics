@@ -465,8 +465,7 @@
       "id": "hermit-fire",
       "characterId": "hermit",
       "bossIds": [
-        "gnoster",
-        "caligo"
+        "gnoster"
       ],
       "relicImages": [
         "assets/relics/hermit-fire_1.png",
@@ -474,7 +473,7 @@
       ],
       "hpLv15": "1016(1524)",
       "attackLv15": 149,
-      "concept": "炎祈祷隠者。カリゴは白雷を狙う",
+      "concept": "炎祈祷隠者",
       "createdAt": "2026-10-24"
     },
     {
@@ -499,13 +498,28 @@
         "assets/relics/hermit-libra_1.png",
         "assets/relics/hermit-libra_2.png"
       ],
-      "hpLv15": "1185(1777)",
-      "attackLv15": 138,
+      "hpLv15": "1089(1633)",
+      "attackLv15": 157,
       "concept": "発狂耐性入れる",
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-10-07"
+      "createdAt": "2026-10-26"
+    },
+    {
+      "id": "hermit-caligo",
+      "characterId": "hermit",
+      "bossIds": [
+        "caligo"
+      ],
+      "relicImages": [
+        "assets/relics/hermit-caligo_1.png",
+        "assets/relics/hermit-caligo_2.png"
+      ],
+      "hpLv15": "924(1386)",
+      "attackLv15": 144,
+      "concept": "炎祈祷隠者。白雷を狙う",
+      "createdAt": "2026-10-26"
     },
     {
       "id": "recluse-all",
