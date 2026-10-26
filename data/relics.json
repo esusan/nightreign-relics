@@ -673,22 +673,6 @@
       "createdAt": "2026-10-18"
     },
     {
-      "id": "duchess-libra",
-      "characterId": "duchess",
-      "bossIds": [
-        "libra"
-      ],
-      "relicImages": [
-        "assets/relics/duchess-libra_1.png",
-        "assets/relics/duchess-libra_2.png"
-      ],
-      "hpLv15": 1020,
-      "attackLv15": 97,
-      "initialSkill": "冷気の霧",
-      "concept": "ガードヘイト",
-      "createdAt": "2026-10-21"
-    },
-    {
       "id": "duchess-saien",
       "characterId": "duchess",
       "relicImages": [
