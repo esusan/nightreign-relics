@@ -1,9 +1,9 @@
 {
   "characters": [
     {
-      "id": "recluse",
+      "id": "wylder",
       "name": "追跡者",
-      "icon": "assets/characters/recluse.png",
+      "icon": "assets/characters/wylder.png",
       "attackLabel": "Lv15 追跡者の大剣R1"
     },
     {
@@ -34,9 +34,9 @@
       "attackLabel": "Lv15 無頼漢の大斧R1"
     },
     {
-      "id": "hermit",
+      "id": "recluse",
       "name": "隠者",
-      "icon": "assets/characters/hermit.png",
+      "icon": "assets/characters/recluse.png",
       "attackLabel": "Lv15 隠者の杖 輝石のつぶて"
     },
     {
@@ -427,14 +427,14 @@
       "createdAt": "2026-09-22"
     },
     {
-      "id": "hermit-gladius",
-      "characterId": "hermit",
+      "id": "recluse-gladius",
+      "characterId": "recluse",
       "bossIds": [
         "gladius"
       ],
       "relicImages": [
-        "assets/relics/hermit-gladius_1.png",
-        "assets/relics/hermit-gladius_2.png"
+        "assets/relics/recluse-gladius_1.png",
+        "assets/relics/recluse-gladius_2.png"
       ],
       "hpLv15": "1078(1617)",
       "attackLv15": 143,
@@ -442,8 +442,8 @@
       "createdAt": "2026-10-07"
     },
     {
-      "id": "hermit-general5",
-      "characterId": "hermit",
+      "id": "recluse-general5",
+      "characterId": "recluse",
       "bossIds": [
         "adel",
         "fulghor",
@@ -453,8 +453,8 @@
         "unknown"
       ],
       "relicImages": [
-        "assets/relics/hermit-general5_1.png",
-        "assets/relics/hermit-general5_2.png"
+        "assets/relics/recluse-general5_1.png",
+        "assets/relics/recluse-general5_2.png"
       ],
       "hpLv15": "1078(1617)",
       "attackLv15": 162,
@@ -462,14 +462,14 @@
       "createdAt": "2026-09-14"
     },
     {
-      "id": "hermit-fire",
-      "characterId": "hermit",
+      "id": "recluse-fire",
+      "characterId": "recluse",
       "bossIds": [
         "gnoster"
       ],
       "relicImages": [
-        "assets/relics/hermit-fire_1.png",
-        "assets/relics/hermit-fire_2.png"
+        "assets/relics/recluse-fire_1.png",
+        "assets/relics/recluse-fire_2.png"
       ],
       "hpLv15": "1016(1524)",
       "attackLv15": 149,
@@ -477,14 +477,14 @@
       "createdAt": "2026-10-24"
     },
     {
-      "id": "hermit-maris",
-      "characterId": "hermit",
+      "id": "recluse-maris",
+      "characterId": "recluse",
       "bossIds": [
         "maris"
       ],
       "relicImages": [
-        "assets/relics/hermit-maris-maryoku_1.png",
-        "assets/relics/hermit-maris-maryoku_2.png"
+        "assets/relics/recluse-maris-maryoku_1.png",
+        "assets/relics/recluse-maris-maryoku_2.png"
       ],
       "hpLv15": "990(1485)",
       "attackLv15": 171,
@@ -492,11 +492,11 @@
       "createdAt": "2026-10-12"
     },
     {
-      "id": "hermit-libra",
-      "characterId": "hermit",
+      "id": "recluse-libra",
+      "characterId": "recluse",
       "relicImages": [
-        "assets/relics/hermit-libra_1.png",
-        "assets/relics/hermit-libra_2.png"
+        "assets/relics/recluse-libra_1.png",
+        "assets/relics/recluse-libra_2.png"
       ],
       "hpLv15": "1089(1633)",
       "attackLv15": 157,
@@ -507,14 +507,14 @@
       "createdAt": "2026-10-26"
     },
     {
-      "id": "hermit-caligo",
-      "characterId": "hermit",
+      "id": "recluse-caligo",
+      "characterId": "recluse",
       "bossIds": [
         "caligo"
       ],
       "relicImages": [
-        "assets/relics/hermit-caligo_1.png",
-        "assets/relics/hermit-caligo_2.png"
+        "assets/relics/recluse-caligo_1.png",
+        "assets/relics/recluse-caligo_2.png"
       ],
       "hpLv15": "924(1386)",
       "attackLv15": 144,
@@ -522,11 +522,11 @@
       "createdAt": "2026-10-26"
     },
     {
-      "id": "recluse-all",
-      "characterId": "recluse",
+      "id": "wylder-all",
+      "characterId": "wylder",
       "relicImages": [
-        "assets/relics/recluse-all_1.png",
-        "assets/relics/recluse-all_2.png"
+        "assets/relics/wylder-all_1.png",
+        "assets/relics/wylder-all_2.png"
       ],
       "hpLv15": 1342,
       "attackLv15": 142,
@@ -548,15 +548,15 @@
       "createdAt": "2026-10-07"
     },
     {
-      "id": "recluse-caligo",
-      "characterId": "recluse",
+      "id": "wylder-caligo",
+      "characterId": "wylder",
       "bossIds": [
         "gnoster",
         "caligo"
       ],
       "relicImages": [
-        "assets/relics/recluse-caligo_1.png",
-        "assets/relics/recluse-caligo_2.png"
+        "assets/relics/wylder-caligo_1.png",
+        "assets/relics/wylder-caligo_2.png"
       ],
       "hpLv15": 1232,
       "attackLv15": 150,
@@ -689,14 +689,14 @@
       "createdAt": "2026-10-24"
     },
     {
-      "id": "recluse-skillpractice",
-      "characterId": "recluse",
+      "id": "wylder-skillpractice",
+      "characterId": "wylder",
       "bossIds": [
         "play"
       ],
       "relicImages": [
-        "assets/relics/recluse-skillpractice_1.png",
-        "assets/relics/recluse-skillpractice_2.png"
+        "assets/relics/wylder-skillpractice_1.png",
+        "assets/relics/wylder-skillpractice_2.png"
       ],
       "hpLv15": 1232,
       "attackLv15": 159,
@@ -704,14 +704,14 @@
       "createdAt": "2026-10-07"
     },
     {
-      "id": "recluse-okane",
-      "characterId": "recluse",
+      "id": "wylder-okane",
+      "characterId": "wylder",
       "bossIds": [
         "play"
       ],
       "relicImages": [
-        "assets/relics/recluse-okane_1.png",
-        "assets/relics/recluse-okane_2.png"
+        "assets/relics/wylder-okane_1.png",
+        "assets/relics/wylder-okane_2.png"
       ],
       "hpLv15": 1220,
       "attackLv15": 146,

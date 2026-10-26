@@ -30,7 +30,10 @@ async function main() {
   const validBossIds = new Set(["all", ...data.bosses.map((b) => b.id)]);
   const validSortIds = new Set(["default", "new", "old"]);
   const params = new URLSearchParams(location.search);
-  const paramCharacter = params.get("character");
+  // 旧ID（hermit=隠者）の共有リンクを新ID（recluse）に読み替える
+  const legacyCharacterIds = { hermit: "recluse" };
+  const rawParamCharacter = params.get("character");
+  const paramCharacter = legacyCharacterIds[rawParamCharacter] || rawParamCharacter;
   const paramBoss = params.get("boss");
   const paramSort = params.get("sort");
   let selectedCharacter = validCharacterIds.has(paramCharacter) ? paramCharacter : "all";
