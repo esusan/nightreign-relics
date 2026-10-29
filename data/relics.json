@@ -40,6 +40,12 @@
       "attackLabel": "Lv15 隠者の杖 輝石のつぶて"
     },
     {
+      "id": "scholar",
+      "name": "学者",
+      "icon": "assets/characters/scholar.png",
+      "attackLabel": "Lv15 学者の刺剣R1"
+    },
+    {
       "id": "undertaker",
       "name": "葬儀屋",
       "icon": "assets/characters/undertaker.png",
@@ -563,6 +569,32 @@
       "initialSkill": "霜踏み",
       "concept": "スキル追撃",
       "createdAt": "2026-10-07"
+    },
+    {
+      "id": "scholar-all",
+      "characterId": "scholar",
+      "relicImages": [
+        "assets/relics/scholar-all_1.png",
+        "assets/relics/scholar-all_2.png"
+      ],
+      "hpLv15": 990,
+      "attackLv15": 96,
+      "initialSkill": "霜踏み",
+      "concept": "サポ学",
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-10-30"
     },
     {
       "id": "undertaker-all-hp",
