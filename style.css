@@ -1,30 +1,24 @@
-:root {
-  --bg: #f6f5f2;
-  --surface: #ffffff;
-  --text: #232025;
-  --text-muted: #6b6570;
-  --border: #e2ddd6;
-  --accent: #7a4b8f;
-  --accent-text: #ffffff;
-}
+/* 配信画面・戦績ページと同じサイバー寄りの見た目（黒地・シアンの線・黄色のアクセント）。暗い配色だけ */
+@font-face { font-family: "Teko"; font-weight: 600; font-display: swap; src: url("assets/fonts/Teko-600.woff2") format("woff2"); }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1c1a1f;
-    --surface: #262329;
-    --text: #ece8ee;
-    --text-muted: #a39da8;
-    --border: #38343c;
-    --accent: #b98bd0;
-    --accent-text: #201a26;
-  }
+:root {
+  color-scheme: dark;
+  --bg: rgb(6, 6, 8);
+  --surface: rgb(16, 17, 20);
+  --text: #ffffff;
+  --text-muted: rgba(215, 220, 230, 0.6);
+  --border: rgba(150, 160, 175, 0.25);
+  --accent: #3ee8f0;
+  --accent-text: #061014;
+  --yellow: #ffd23f;
+  --hp: #ff4f7a;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: "LINE Seed JP", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  font-family: "LINE Seed JP", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif; /* 戦績ページと同じ */
   background: var(--bg);
   color: var(--text);
   padding: 0 1rem 3rem;
@@ -37,13 +31,14 @@ body {
 
 .site-header {
   padding: 1rem 0 0.6rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--accent);
   margin-bottom: 0;
 }
 
 .site-header h1 {
   margin: 0;
   font-size: 1.6rem;
+  letter-spacing: 0.05em;
 }
 
 .header-row {
@@ -72,7 +67,6 @@ body {
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--border);
 }
 
 .social-links {
@@ -90,6 +84,17 @@ body {
   border-radius: 50%;
   color: var(--text-muted);
   border: 1px solid var(--border);
+}
+
+/* 戦績ページへのリンク（戦績ページ側にも遺物一覧へのリンクがある） */
+.social-links a.page-link {
+  width: auto;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .social-links a:hover {
@@ -125,6 +130,10 @@ body {
 
 .character-btn:hover {
   border-color: var(--accent);
+}
+
+.character-btn img {
+  border-radius: 50%;
 }
 
 .character-btn.active {
@@ -173,14 +182,39 @@ body {
   gap: 1.2rem;
 }
 
+/* カード：角を落とした枠＋左上と右下にシアンのかぎ括弧（配信画面のパネル風） */
 .card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.card::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+}
+
+.card::after {
+  right: -1px;
+  bottom: -1px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 
 .card-header {
@@ -291,7 +325,7 @@ body {
 .relic-image, .relic-image-placeholder {
   flex: 1;
   min-width: 0;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid var(--border);
   background: var(--surface);
 }
@@ -340,47 +374,38 @@ body {
   color: var(--text);
 }
 
-.hp-badge {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  background: #3c0808;
-  border-radius: 999px;
-  padding: 0.2rem 0.8rem;
-}
-
-.hp-badge .stat-label-hp {
-  color: #f0d5d5;
-}
-
-.hp-badge .stat-value-hp {
-  color: #ffffff;
-}
-
-.attack-badge {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  background: #4a3806;
-  border-radius: 999px;
-  padding: 0.2rem 0.8rem;
-}
-
-.attack-badge .stat-label-attack {
-  color: #f3e3b0;
-}
-
-.attack-badge .stat-value-attack {
-  color: #ffffff;
-}
-
+/* HP・攻撃力・戦技の札：配信画面の遺物パネルと同じく、暗い地に色の枠（HP=赤・攻撃力=黄・戦技=シアン） */
+.hp-badge,
+.attack-badge,
 .skill-badge {
+  --c: var(--accent);
   display: inline-flex;
   align-items: baseline;
-  gap: 0.35rem;
-  background: #1f4a24;
-  border-radius: 999px;
+  gap: 0.4rem;
+  background: color-mix(in srgb, var(--c) 10%, var(--bg));
+  border: 1px solid color-mix(in srgb, var(--c) 70%, transparent);
+  border-left-width: 4px;
+  border-radius: 3px;
   padding: 0.2rem 0.8rem;
+}
+
+.hp-badge { --c: var(--hp); }
+.attack-badge { --c: var(--yellow); }
+.skill-badge { --c: var(--accent); }
+
+.hp-badge .stat-label,
+.attack-badge .stat-label {
+  color: color-mix(in srgb, var(--c) 55%, #ffffff);
+}
+
+/* 数値はTeko（配信画面の連勝と同じ） */
+.hp-badge .stat-value,
+.attack-badge .stat-value {
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 0.9;
+  color: #ffffff;
 }
 
 .skill-badge .stat-value-skill {
