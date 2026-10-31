@@ -658,10 +658,8 @@
       "initialSkill": "冷気の霧",
       "concept": "攻スタ&リゲイン",
       "bossIds": [
-        "gladius",
         "adel",
         "gnoster",
-        "maris",
         "libra",
         "fulghor",
         "caligo",
