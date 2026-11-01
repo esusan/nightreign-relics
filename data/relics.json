@@ -34,6 +34,12 @@
       "attackLabel": "Lv15 無頼漢の大斧R1"
     },
     {
+      "id": "revenant",
+      "name": "復讐者",
+      "icon": "assets/characters/revenant.png",
+      "attackLabel": "Lv15 セスタス タメR2"
+    },
+    {
       "id": "recluse",
       "name": "隠者",
       "icon": "assets/characters/recluse.png",
@@ -645,6 +651,44 @@
         "unknown"
       ],
       "createdAt": "2026-09-26"
+    },
+    {
+      "id": "revenant-all",
+      "characterId": "revenant",
+      "relicImages": [
+        "assets/relics/revenant-all_1.png",
+        "assets/relics/revenant-all_2.png"
+      ],
+      "hpLv15": 1258,
+      "attackLv15": 252,
+      "bossIds": [
+        "gladius",
+        "adel",
+        "gnoster",
+        "maris",
+        "libra",
+        "fulghor",
+        "caligo",
+        "heolstor",
+        "harmonia",
+        "straghess",
+        "unknown"
+      ],
+      "createdAt": "2026-11-01"
+    },
+    {
+      "id": "revenant-libra",
+      "characterId": "revenant",
+      "bossIds": [
+        "libra"
+      ],
+      "relicImages": [
+        "assets/relics/revenant-libra_1.png",
+        "assets/relics/revenant-libra_2.png"
+      ],
+      "hpLv15": 1331,
+      "attackLv15": 249,
+      "createdAt": "2026-11-01"
     },
     {
       "id": "duchess-kousuta-regain",
