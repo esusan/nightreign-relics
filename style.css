@@ -102,6 +102,10 @@ body {
   border-color: var(--accent);
 }
 
+/* えすさんのページ（https://esusan.github.io/）へのリンク。「えす」のアイコンを丸く出す */
+.social-links a.home-link { overflow: hidden; }
+.social-links a.home-link img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
 .filters {
   padding: 0.6rem 0;
   margin-bottom: 1.5rem;
