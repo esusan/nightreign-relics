@@ -43,7 +43,10 @@
       "id": "recluse",
       "name": "隠者",
       "icon": "assets/characters/recluse.png",
-      "attackLabel": "Lv15 隠者の杖 輝石のつぶて"
+      "attackLabel": "Lv15 隠者の杖 輝石のつぶて",
+      "extraStats": [
+        { "key": "meteorGravityChargeLv15", "label": "Lv15 隕石の杖 重力弾タメ" }
+      ]
     },
     {
       "id": "scholar",
@@ -532,6 +535,22 @@
       "attackLv15": 144,
       "concept": "炎祈祷隠者。白雷を狙う",
       "createdAt": "2026-10-26"
+    },
+    {
+      "id": "recluse-gravity",
+      "characterId": "recluse",
+      "bossIds": [
+        "play"
+      ],
+      "relicImages": [
+        "assets/relics/recluse-gravity_1.png",
+        "assets/relics/recluse-gravity_2.png"
+      ],
+      "hpLv15": "740(1110)",
+      "attackLv15": 181,
+      "meteorGravityChargeLv15": 1013,
+      "concept": "重力特化",
+      "createdAt": "2026-11-09"
     },
     {
       "id": "wylder-all",
