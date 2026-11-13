@@ -458,6 +458,29 @@ body {
     z-index: 20;
     background: var(--bg);
   }
+
+  /* PCではキャラボタンを折り返さず1段に収める（キャラが増えても均等に縮める） */
+  .character-filter {
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+  }
+
+  .character-filter .character-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.35rem;
+  }
+
+  .character-filter .character-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .character-filter .character-btn-label {
+    white-space: nowrap;
+  }
 }
 
 /* OBSのブラウザソース専用（app.jsがhtmlにobsクラスを付ける） */
