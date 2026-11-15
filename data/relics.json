@@ -424,13 +424,13 @@
         "assets/relics/ironeye-libra_1.png",
         "assets/relics/ironeye-libra_2.png"
       ],
-      "hpLv15": 940,
-      "attackLv15": 133,
+      "hpLv15": 880,
+      "attackLv15": 153,
       "concept": "作ってみた1段",
       "bossIds": [
         "libra"
       ],
-      "createdAt": "2026-09-13"
+      "createdAt": "2026-11-16"
     },
     {
       "id": "ironeye-rune",
@@ -788,14 +788,14 @@
         "assets/relics/duchess-sengi_1.png",
         "assets/relics/duchess-sengi_2.png"
       ],
-      "hpLv15": 1056,
+      "hpLv15": 946,
       "attackLv15": 80,
       "initialSkill": "血の刃",
       "concept": "戦技型",
       "bossIds": [
         "maris"
       ],
-      "createdAt": "2026-11-13"
+      "createdAt": "2026-11-16"
     },
     {
       "id": "duchess-caligo",
