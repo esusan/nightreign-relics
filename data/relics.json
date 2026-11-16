@@ -705,6 +705,21 @@
       "createdAt": "2026-09-26"
     },
     {
+      "id": "raider-gareki",
+      "characterId": "raider",
+      "relicImages": [
+        "assets/relics/raider-gareki_1.png",
+        "assets/relics/raider-gareki_2.png"
+      ],
+      "hpLv15": 1320,
+      "attackLv15": 164,
+      "concept": "瓦礫無頼漢",
+      "bossIds": [
+        "play"
+      ],
+      "createdAt": "2026-11-16"
+    },
+    {
       "id": "revenant-all",
       "characterId": "revenant",
       "relicImages": [
