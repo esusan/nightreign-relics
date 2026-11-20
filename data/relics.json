@@ -764,8 +764,8 @@
         "assets/relics/duchess-basic_1.png",
         "assets/relics/duchess-basic_2.png"
       ],
-      "hpLv15": 1056,
-      "attackLv15": 98,
+      "hpLv15": 1188,
+      "attackLv15": 95,
       "initialSkill": "冷気の霧",
       "concept": "基本",
       "bossIds": [
@@ -778,7 +778,7 @@
         "straghess",
         "unknown"
       ],
-      "createdAt": "2026-11-13"
+      "createdAt": "2026-11-20"
     },
     {
       "id": "duchess-gladius",
@@ -790,11 +790,11 @@
         "assets/relics/duchess-gladius_1.png",
         "assets/relics/duchess-gladius_2.png"
       ],
-      "hpLv15": 1161,
-      "attackLv15": 87,
+      "hpLv15": 1188,
+      "attackLv15": 93,
       "initialSkill": "冷気の霧",
       "concept": "炎カット属性カットを厚くする",
-      "createdAt": "2026-11-13"
+      "createdAt": "2026-11-20"
     },
     {
       "id": "duchess-sengi",
@@ -819,14 +819,14 @@
         "assets/relics/duchess-caligo_1.png",
         "assets/relics/duchess-caligo_2.png"
       ],
-      "hpLv15": 1056,
-      "attackLv15": 96,
+      "hpLv15": 1306,
+      "attackLv15": 84,
       "initialSkill": "冷気の霧",
       "concept": "被ダメ状態異常を調整",
       "bossIds": [
         "caligo"
       ],
-      "createdAt": "2026-11-13"
+      "createdAt": "2026-11-20"
     },
     {
       "id": "duchess-kousuta-regain",
