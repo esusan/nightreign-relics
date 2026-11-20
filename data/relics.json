@@ -819,8 +819,8 @@
         "assets/relics/duchess-caligo_1.png",
         "assets/relics/duchess-caligo_2.png"
       ],
-      "hpLv15": 1306,
-      "attackLv15": 84,
+      "hpLv15": 1080,
+      "attackLv15": 105,
       "initialSkill": "冷気の霧",
       "concept": "被ダメ状態異常を調整",
       "bossIds": [
