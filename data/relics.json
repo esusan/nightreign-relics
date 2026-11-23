@@ -799,54 +799,6 @@
       "createdAt": "2026-11-20"
     },
     {
-      "id": "duchess-libra",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-libra_1.png",
-        "assets/relics/duchess-libra_2.png"
-      ],
-      "hpLv15": 1188,
-      "attackLv15": 95,
-      "initialSkill": "冷気の霧",
-      "concept": "基本",
-      "bossIds": [
-        "libra"
-      ],
-      "createdAt": "2026-11-21"
-    },
-    {
-      "id": "duchess-caligo",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-caligo_1.png",
-        "assets/relics/duchess-caligo_2.png"
-      ],
-      "hpLv15": 1080,
-      "attackLv15": 105,
-      "initialSkill": "冷気の霧",
-      "concept": "被ダメ状態異常を調整",
-      "bossIds": [
-        "caligo"
-      ],
-      "createdAt": "2026-11-20"
-    },
-    {
-      "id": "duchess-kousuta-regain",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-kousuta-regain_1.png",
-        "assets/relics/duchess-kousuta-regain_2.png"
-      ],
-      "hpLv15": 960,
-      "attackLv15": 97,
-      "initialSkill": "冷気の霧",
-      "concept": "攻スタ&リゲイン",
-      "bossIds": [
-        "harmonia"
-      ],
-      "createdAt": "2026-10-20"
-    },
-    {
       "id": "duchess-saien",
       "characterId": "duchess",
       "relicImages": [
