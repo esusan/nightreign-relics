@@ -805,14 +805,14 @@
         "assets/relics/duchess-saien_1.png",
         "assets/relics/duchess-saien_2.png"
       ],
-      "hpLv15": 860,
-      "attackLv15": 106,
-      "initialSkill": "冷気の霧",
+      "hpLv15": 1056,
+      "attackLv15": 85,
+      "initialSkill": "毒蛾は二度舞う",
       "concept": "再演",
       "bossIds": [
         "play"
       ],
-      "createdAt": "2026-11-13"
+      "createdAt": "2026-11-24"
     },
     {
       "id": "wylder-skillpractice",
