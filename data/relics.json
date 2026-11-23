@@ -792,11 +792,11 @@
         "assets/relics/duchess-gladius_1.png",
         "assets/relics/duchess-gladius_2.png"
       ],
-      "hpLv15": 1188,
-      "attackLv15": 93,
-      "initialSkill": "冷気の霧",
+      "hpLv15": 946,
+      "attackLv15": 98,
+      "initialSkill": "血の刃",
       "concept": "炎カット属性カットを厚くする",
-      "createdAt": "2026-11-20"
+      "createdAt": "2026-11-24"
     },
     {
       "id": "duchess-saien",
