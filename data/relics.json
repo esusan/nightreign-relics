@@ -764,19 +764,23 @@
         "assets/relics/duchess-basic_1.png",
         "assets/relics/duchess-basic_2.png"
       ],
-      "hpLv15": 1080,
-      "attackLv15": 105,
-      "initialSkill": "冷気の霧",
+      "hpLv15": 946,
+      "attackLv15": 96,
+      "initialSkill": "血の刃",
       "concept": "基本",
       "bossIds": [
         "adel",
         "gnoster",
+        "maris",
+        "libra",
         "fulghor",
+        "caligo",
         "heolstor",
+        "harmonia",
         "straghess",
         "unknown"
       ],
-      "createdAt": "2026-11-21"
+      "createdAt": "2026-11-24"
     },
     {
       "id": "duchess-gladius",
@@ -793,22 +797,6 @@
       "initialSkill": "冷気の霧",
       "concept": "炎カット属性カットを厚くする",
       "createdAt": "2026-11-20"
-    },
-    {
-      "id": "duchess-sengi",
-      "characterId": "duchess",
-      "relicImages": [
-        "assets/relics/duchess-sengi_1.png",
-        "assets/relics/duchess-sengi_2.png"
-      ],
-      "hpLv15": 946,
-      "attackLv15": 88,
-      "initialSkill": "血の刃",
-      "concept": "戦技型",
-      "bossIds": [
-        "maris"
-      ],
-      "createdAt": "2026-11-16"
     },
     {
       "id": "duchess-libra",
