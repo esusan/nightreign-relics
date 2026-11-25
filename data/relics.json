@@ -628,6 +628,21 @@
       "createdAt": "2026-11-13"
     },
     {
+      "id": "executor-ichidan",
+      "characterId": "executor",
+      "relicImages": [
+        "assets/relics/executor-ichidan_1.png",
+        "assets/relics/executor-ichidan_2.png"
+      ],
+      "hpLv15": 1180,
+      "attackLv15": 214,
+      "concept": "一段目執行者",
+      "bossIds": [
+        "play"
+      ],
+      "createdAt": "2026-11-25"
+    },
+    {
       "id": "scholar-all",
       "characterId": "scholar",
       "relicImages": [
